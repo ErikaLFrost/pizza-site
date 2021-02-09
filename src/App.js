@@ -12,8 +12,6 @@ import Insta from './components/Insta';
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
 `
 
 function App() {
