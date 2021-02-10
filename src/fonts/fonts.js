@@ -1,13 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-import * as PlatonickFont from './Platonick Font.ttf'
-
+import PlatonickFont from './PlatonickFont.ttf';
 
 export default createGlobalStyle`
 @font-face {
-    font-family: 'Platonick Font';
-    src: local('Platonick Font'), url(${PlatonickFont}) format('ttf');
+    font-family: 'PlatonickFont';
+    src: local('PlatonickFont'), url(${PlatonickFont}) format('truetype');
     font-weight: normal;
-    font-style: normal;
 }
 html,
   body {
@@ -16,10 +14,10 @@ html,
   }
 
   body {
-    font-family: 'Platonick Font', Helvetica, Arial, sans-serif;
+    font-family: 'PlatonickFont';
   }
 
-  body.fontLoaded {
-    font-family: 'Platonick Font', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+  /* body.fontLoaded {
+    font-family: 'PlatonickFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  } */
 `;
