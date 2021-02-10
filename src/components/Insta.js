@@ -8,12 +8,15 @@ const InstaWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
     div{
-        grid-column: span 3;
-        @media(max-width: 768px) {
-            grid-column: span 6;
+        grid-column: span 2;
+        padding: .1rem;
+        @media(max-width: 1000px) {
+            grid-column: span 4;
         }
     }
     a{
+        color: black;
+        text-decoration: none;
     }
     img{
         width: 100%;
@@ -22,7 +25,7 @@ const InstaWrapper = styled.div`
 `;
 
 const FollowUs = styled.h1`
-    font-family: 'PlatonickFont';
+    font-family: 'Menlo';
     grid-column: span 12;
     text-align: center;
 `;
@@ -32,14 +35,14 @@ const Insta = () => {
     let photos = useInstagramFeed({
         userId: "10901300886",
         thumbnailWidth: 640,
-        photoCount: 4,
+        photoCount: 6,
     })
 
     console.log(photos)
 
     return (
         <InstaWrapper>
-            <FollowUs>Följ oss på Instagram {" "}
+            <FollowUs>
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank">@piccolanonna</a>{"\n"}
             </FollowUs>
             {photos &&
