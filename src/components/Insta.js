@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useInstagramFeed } from 'use-instagram-feed';
+import '../fonts/fonts';
 
 const InstaWrapper = styled.div`
     grid-column: span 12;
@@ -21,7 +22,7 @@ const InstaWrapper = styled.div`
 `;
 
 const FollowUs = styled.h1`
-    font-family: 'Platonick Font';
+    font-family: 'PlatonickFont';
     grid-column: span 12;
     text-align: center;
 `;
