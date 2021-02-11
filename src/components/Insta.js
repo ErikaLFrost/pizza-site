@@ -7,25 +7,27 @@ const InstaWrapper = styled.div`
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-    div{
+    align-items: center;
+    justify-content: center;
+    div {
         grid-column: span 2;
         padding: .1rem;
         @media(max-width: 1000px) {
             grid-column: span 4;
         }
     }
-    a{
+    a {
         color: black;
         text-decoration: none;
     }
-    img{
+    img {
         width: 100%;
         height: 100%
     }
 `;
 
 const FollowUs = styled.h1`
-    font-family: 'Menlo';
+    font-family: 'Menlo', sans-serif;
     grid-column: span 12;
     text-align: center;
 `;

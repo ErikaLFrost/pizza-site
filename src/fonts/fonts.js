@@ -6,12 +6,8 @@ export default createGlobalStyle`
     font-family: 'PlatonickFont';
     src: local('PlatonickFont'), url(${PlatonickFont}) format('truetype');
     font-weight: normal;
-    font-family: "Menlo"; 
-    src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot"); 
-    src: url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.eot?#iefix") format("embedded-opentype"), 
-    /* url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/9f94dc20bb2a09c15241d3a880b7ad01.ttf") format("truetype") */
+    font-family: 'Menlo';
+    src: url("'http://fonts.cdnfonts.com/css/menlo'");
 }
 html,
   body {
