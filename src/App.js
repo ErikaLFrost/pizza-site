@@ -17,6 +17,7 @@ const MainWrapper = styled.div`
 
 const GridWrapper = styled.div`
   width: 100%;
+  background-color: #FF9999;
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
 `
@@ -25,15 +26,15 @@ function App() {
   return (
     <MainWrapper>
       <GlobalFonts />
-      <GridWrapper>
         <Hero />
+        <GridWrapper>
         <Menu />
         <VisitUs />
         <Catering />
         <Merch />
         <AboutUs />
+        </GridWrapper>
         <Insta />
-      </GridWrapper>
     </MainWrapper>
   );
 }

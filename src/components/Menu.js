@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import '../fonts/fonts';
 
 const MenuWrapper = styled.div`
-    grid-column: span 12;
+    grid-column: span 7;
     height: 700px;
-    background-color: #FF9999;
+    @media(max-width: 1000px) {
+        grid-column: span 12;
+    }
 `;
 
 const MenuMenu = styled.div`
