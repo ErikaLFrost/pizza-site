@@ -13,11 +13,13 @@ import Insta from './components/Insta';
 const MainWrapper = styled.div`
   position: relative;
 `;
-
+const BackgroundWrapper = styled.div`
+  background-color: #FF9999;
+ `;
 
 const GridWrapper = styled.div`
   width: 100%;
-  background-color: #FF9999;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
 `
@@ -26,15 +28,17 @@ function App() {
   return (
     <MainWrapper>
       <GlobalFonts />
-        <Hero />
+      <Hero />
+      <BackgroundWrapper>
         <GridWrapper>
-        <Menu />
-        <VisitUs />
-        <Catering />
-        <Merch />
-        <AboutUs />
+          <Menu />
+          <VisitUs />
+          <Catering />
+          <Merch />
+          <AboutUs />
         </GridWrapper>
-        <Insta />
+      </BackgroundWrapper>
+      <Insta />
     </MainWrapper>
   );
 }
