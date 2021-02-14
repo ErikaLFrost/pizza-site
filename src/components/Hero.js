@@ -1,6 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
-import LaPiccolaNonnaLogo from '../images/La_Piccola_Nonna_Logo.svg';
+import styled, { keyframes } from 'styled-components';
+
+const pulsingEffect = keyframes`
+    0% { filter: drop-shadow(0px 0px 1px white); }
+    18% { filter: drop-shadow(0px 0px 46px white); }
+    28% { filter: drop-shadow(0px 0px 46px white); }
+    100% { filter: drop-shadow(0px 0px 1px white); }
+ `
 
 const HeroWrapper = styled.div`
     grid-column: span 12;
@@ -12,10 +18,13 @@ const Logo = styled.div`
     width: 100%;
     height: 100%;
     /* Background blur for neon effect */
-    filter: drop-shadow(2px 4px 6px green);
+    filter: drop-shadow(0px 0px 1px white);
     svg {
         max-height: 100vh;
     }
+    animation-name: ${pulsingEffect};
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
 `
 
 const Hero = () => {
