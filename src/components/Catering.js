@@ -36,6 +36,7 @@ const CateringContent = styled.div`
         margin: 0;
         padding-top: 20px;
         font-family: 'PlatonickFont';
+        font-size: 50px;
     }
     span{
         text-align: center;
