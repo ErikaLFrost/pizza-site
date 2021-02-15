@@ -12,9 +12,11 @@ import Insta from './components/Insta';
 
 const MainWrapper = styled.div`
   position: relative;
+  background-color: #F29699;
 `;
+/* Behövs verkligen den här diven? */
 const BackgroundWrapper = styled.div`
-  background-color: #FF9999;
+  /* background-color: #F29699; */
  `;
 
 const GridWrapper = styled.div`
