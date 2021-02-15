@@ -21,6 +21,7 @@ const GridWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
 `
