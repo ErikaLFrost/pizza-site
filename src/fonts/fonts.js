@@ -6,8 +6,11 @@ export default createGlobalStyle`
     font-family: 'PlatonickFont';
     src: local('PlatonickFont'), url(${PlatonickFont}) format('truetype');
     font-weight: normal;
+}
+/* Inte helt 100 på om denna font faktiskt syns? */
+@font-face {
     font-family: 'Menlo';
-    src: url("'http://fonts.cdnfonts.com/css/menlo'");
+    src: url('http://fonts.cdnfonts.com/css/menlo');
 }
 html,
   body {
@@ -19,11 +22,11 @@ html,
     font-family: 'Menlo';
   }
 
-  h1, h2, h3, h4, h5, h6{
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'PlatonickFont';
   }
 
   /* body.fontLoaded {
-    font-family: 'PlatonickFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'PlatonickFont', 'Menlo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   } */
 `;

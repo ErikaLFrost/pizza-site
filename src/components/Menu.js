@@ -4,7 +4,6 @@ import '../fonts/fonts';
 
 const MenuWrapper = styled.div`
     grid-column: span 7;
-    height: 700px;
     @media(max-width: 1000px) {
         grid-column: span 12;
     }
@@ -13,9 +12,9 @@ const MenuWrapper = styled.div`
 const MenuMenu = styled.div`
     width: calc(100% - 20px);
     max-width: 500px;
-    height: 600px;
+    padding-bottom: 50px;
     border: 2px solid black;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     box-sizing: border-box;
     position: relative;
     text-transform: uppercase;
@@ -35,6 +34,7 @@ const MenuMenu = styled.div`
 
 const MenuTitle = styled.h1`
     text-align: center;
+    font-size: 50px;
 `;
 
 const MenuPizza = styled.p`

@@ -45,7 +45,7 @@ const Insta = () => {
     return (
         <InstaWrapper>
             <FollowUs>
-                <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank">@piccolanonna</a>{"\n"}
+                <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer">@piccolanonna</a>{"\n"}
             </FollowUs>
             {photos &&
                 photos.map(({ id, caption, src, width, height, url }) => (
