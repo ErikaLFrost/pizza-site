@@ -11,6 +11,7 @@ const pulsingEffect = keyframes`
 const HeroWrapper = styled.div`
     grid-column: span 12;
     height: 100vh;
+    min-height: 400px;
     background-color: black;
 `;
 
