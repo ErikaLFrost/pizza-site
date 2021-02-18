@@ -9,10 +9,12 @@ import Catering from './components/Catering';
 import Merch from './components/Merch';
 import AboutUs from './components/AboutUs';
 import Insta from './components/Insta';
+import Sticky from './components/Sticky';
 
 const MainWrapper = styled.div`
   position: relative;
   background-color: #F29699;
+  padding-bottom: 50px;
 `;
 /* Behövs verkligen den här diven? */
 const BackgroundWrapper = styled.div`
@@ -31,6 +33,7 @@ const GridWrapper = styled.div`
 function App() {
   return (
     <MainWrapper>
+      <Sticky />
       <GlobalFonts />
       <Hero />
       <BackgroundWrapper>
