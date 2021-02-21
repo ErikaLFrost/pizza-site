@@ -54,7 +54,7 @@ const Catering = () => {
                 <CateringContent>
                 <h2>Catering</h2>
                 <span><p>{`
-                    Pellentesque feugiat neque quis neque laoreet gravida. Etiam quis dolor massa. Duis finibus sapien ipsum, eget dignissim tellus viverra ac. Donec ac turpis mi. Quisque eget maximus mi, faucibus condimentum sapien. Donec velit dolor, fermentum nec lectus ac, semper pellentesque leo. Morbi laoreet ut urna nec pharetra. Vivamus tincidunt nunc sed elit efficitur, vel aliquam est porttitor.`}</p>
+                    Pellentesque feugiat neque quis neque laoreet gravida. Etiam quis dolor massa. Duis finibus sapien ipsum, eget dignissim tellus viverra ac. Donec ac turpis mi. Quisque eget maximus mi, faucibus condimentum sapien. Donec velit dolor, fermentum nec lectus ac, semper pellentesque leo. Morbi laoreet ut urna nec pharetra.`}</p>
                 </span>
                 </CateringContent>
             </CateringWrapper>)
