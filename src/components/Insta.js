@@ -5,12 +5,9 @@ import '../fonts/fonts';
 
 const InstaWrapper = styled.div`
     grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
     align-items: center;
     justify-content: center;
     div {
-        grid-column: span 2;
         padding: .1rem;
         @media(max-width: 1000px) {
             grid-column: span 4;
@@ -26,6 +23,13 @@ const InstaWrapper = styled.div`
     }
 `;
 
+const InstaIframe = styled.iframe`
+    width:100%;
+    height: 66vw;
+    border:0;
+    overflow:hidden;
+`
+
 const FollowUs = styled.h1`
     font-family: 'Menlo', sans-serif;
     grid-column: span 12;
@@ -34,27 +38,17 @@ const FollowUs = styled.h1`
 
 
 const Insta = () => {
-    let photos = useInstagramFeed({
-        userId: "10901300886",
-        thumbnailWidth: 640,
-        photoCount: 6,
-    })
-
-    console.log(photos)
-
     return (
         <InstaWrapper>
             <FollowUs>
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer">@piccolanonna</a>{"\n"}
             </FollowUs>
-            {photos &&
-                photos.map(({ id, caption, src, width, height, url }) => (
-                    <div key={id}>
-                        <a href={url}>
-                            <img src={src} alt={caption} />
-                        </a>
-                    </div>
-                ))}
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <div>
+                <InstaIframe src="//lightwidget.com/widgets/9a82d18904bd5a84bb917f8edd20745a.html" scrolling="no" allowtransparency="true"
+                    className="lightwidget-widget"></InstaIframe>
+
+            </div>
         </InstaWrapper>)
 }
 
