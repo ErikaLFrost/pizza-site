@@ -43,12 +43,12 @@ const Insta = () => {
             <FollowUs>
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer">@piccolanonna</a>{"\n"}
             </FollowUs>
-            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            {/* <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
             <div>
                 <InstaIframe src="//lightwidget.com/widgets/9a82d18904bd5a84bb917f8edd20745a.html" scrolling="no" allowtransparency="true"
                     className="lightwidget-widget"></InstaIframe>
 
-            </div>
+            </div> */}
         </InstaWrapper>)
 }
 
