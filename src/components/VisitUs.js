@@ -35,23 +35,47 @@ const VisitUsContent = styled.div`
     h2{
         margin: 0;
         padding-top: 20px;
-        font-family: 'PlatonickFont';
         font-size: 50px;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
+        text-shadow: 0 1px 1px rgba(242, 151, 154, 0.5), 0 0 5px rgba(242, 151, 154, 0.4), 0 0 30px rgba(242, 151, 154, 0.7);
     }
     span{
         text-align: center;
         p{
+            color: white;
             margin-top: 0;
             margin-bottom: .5rem;
             font-size: 1.5rem;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
         }
-    }
-`
+   }
+`;
+
+const BlurContainer = styled.div`
+   position: relative;
+`;
+
+const BlurContainerList = styled.div`
+    mix-blend-mode: multiply;
+    content: "";
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    filter: blur(70px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: blur(120px);
+`;
 
 const VisitUs = () => {
     return (
         <VisitUsWrapper>
             <VisitUsContent>
+                <BlurContainer />
+                <BlurContainerList />
                 <h2>Besök oss</h2>
                 <span><p>{`
                     Södermalm \n`}</p>
