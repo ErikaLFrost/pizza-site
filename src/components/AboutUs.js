@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import AboutUsImg from '../images/LPNOm.png';
+import AboutUsImg from '../images/crew.jpg';
 
 const AboutUsWrapper = styled.div`
     grid-column: span 5;
@@ -37,6 +37,7 @@ const AboutUsContent = styled.div`
         padding-top: 20px;
         font-family: 'PlatonickFont';
         font-size: 50px;
+        text-shadow: 2px 2px 6px white;
     }
     span{
         text-align: center;
