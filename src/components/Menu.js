@@ -35,7 +35,9 @@ const MenuMenu = styled.div`
 
     h1{
         text-align: center;
-        font-size: 50px;
+        font-size: 60px;
+        filter: drop-shadow(0 0 0.5rem rgba(251, 205, 205, 0.5));
+        /* filter: drop-shadow(0px 0px 1px white); */
     }
 
     h2{

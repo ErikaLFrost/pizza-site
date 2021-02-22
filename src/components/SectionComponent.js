@@ -6,6 +6,8 @@ const SectionWrapper = styled.div`
     background: linear-gradient(
         rgba(251, 205, 205, 0.52), 
         rgba(251, 205, 205, 0.52)
+        /* rgba(242, 150, 153, 0.2), 
+        rgba(242, 150, 153, 0.4) */
         ),url(${props => props.bgImage && props.bgImage});
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,34 +31,56 @@ const SectionContent = styled.div`
     justify-content: center;
     flex-direction: column;
     white-space: pre-line;
-    h2{
+
+    h2 {
         margin: 0;
         padding-top: 20px;
-        font-family: 'PlatonickFont';
-        font-size: 50px;
-        text-shadow: 2px 2px 6px white;
+        font-size: 60px;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
     }
-    span{
+
+    p {
         text-align: center;
-        p{
-            margin-top: 0;
-            margin-bottom: .5rem;
-            font-size: 1rem;
-            padding: 0 10px;
-        }
+        line-height: 1.6;
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-size: 1rem;
+        padding: 0 10px;
+        font-weight: 600;
+        /* text-shadow: 0 1px 1px rgba(242, 150, 153, 0.5), 0 0 5px rgba(242, 150, 153, 0.4), 0 0 30px rgba(242, 150, 153, 0.7); */
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
     }
+`;
+
+const BlurContainer = styled.div`
+   position: relative;
+`;
+
+const BlurContainerList = styled.div`
+    mix-blend-mode: multiply;
+    content: "";
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    filter: blur(70px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: blur(120px);
 `;
 
 const SectionComponent = ({ title, spanText, bgImage }) => {
     return (
         <SectionWrapper bgImage={bgImage}>
             <SectionContent>
+                <BlurContainer />
+                <BlurContainerList />
                 <h2>{title}</h2>
-                <span>
                     <p>
                         {spanText}
                     </p>
-                </span>
             </SectionContent>
         </SectionWrapper>
     )
