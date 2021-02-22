@@ -34,18 +34,19 @@ const VisitUsContent = styled.div`
     h2{
         margin: 0;
         padding-top: 20px;
-        font-size: 50px;
+        font-size: 60px;
         text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
-        text-shadow: 0 1px 1px rgba(242, 151, 154, 0.5), 0 0 5px rgba(242, 151, 154, 0.4), 0 0 30px rgba(242, 151, 154, 0.7);
     }
     span{
         text-align: center;
         p{
-            color: white;
+            font-weight: 600;
             margin-top: 0;
             margin-bottom: .5rem;
             font-size: 1.5rem;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
+            
         }
    }
 `;

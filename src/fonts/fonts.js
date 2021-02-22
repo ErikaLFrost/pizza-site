@@ -7,11 +7,11 @@ export default createGlobalStyle`
     src: local('PlatonickFont'), url(${PlatonickFont}) format('truetype');
     font-weight: normal;
 }
-/* Inte helt 100 på om denna font faktiskt syns? */
-@font-face {
+/* @font-face {
     font-family: 'Menlo';
     src: url('http://fonts.cdnfonts.com/css/menlo');
-}
+} */
+
 html,
   body {
     height: 100%;
@@ -19,7 +19,7 @@ html,
   }
 
   body {
-    font-family: 'Menlo';
+    font-family: 'Raleway';
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -28,6 +28,6 @@ html,
   }
 
   /* body.fontLoaded {
-    font-family: 'PlatonickFont', 'Menlo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'PlatonickFont', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   } */
 `;
