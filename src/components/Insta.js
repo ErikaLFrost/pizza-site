@@ -2,6 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { useInstagramFeed } from 'use-instagram-feed';
 import '../fonts/fonts';
+import InstagramFeed from 'react-ig-feed'
+import 'react-ig-feed/dist/index.css'
+
+// const App = () => {
+//   return (
+//      <InstagramFeed token={your_token}  counter="6"/>
+//   );
+// };
+
+console.log("InstagramFeed", InstagramFeed)
+
+const token = "IGQVJYRWM3UWxULUU2QWttdWw5NTFScHU4VURUR2E4LVdNVDBCdnZAVb09wWFNCbDBLUXBZAWGxEbEJfc1dCcmtaYjdUYVlwbTAwZAkc2RFJtMVZAMeXpUVkJDbmZArbnBISWtjWWNnc0g2RTlBbmpyYllrTgZDZD";
 
 const InstaWrapper = styled.div`
     grid-column: span 12;
@@ -36,6 +48,25 @@ const FollowUs = styled.h1`
     text-align: center;
 `;
 
+const InstaFeedWapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+`;
+
+const StyledInstaFeed = styled(InstagramFeed)`
+    display: grid !important;
+    div{
+        display: grid !important;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        div{
+            display: grid !important;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        }
+    }
+
+`;
+
+
 
 const Insta = () => {
     return (
@@ -43,12 +74,9 @@ const Insta = () => {
             <FollowUs>
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer">@piccolanonna</a>{"\n"}
             </FollowUs>
-            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-            <div>
-                <InstaIframe src="//lightwidget.com/widgets/9a82d18904bd5a84bb917f8edd20745a.html" scrolling="no" allowtransparency="true"
-                    className="lightwidget-widget"></InstaIframe>
-
-            </div>
+            {/* <InstaFeedWapper> */}
+                <StyledInstaFeed token={token} counter="5" style="display:grid" />
+            {/* </InstaFeedWapper> */}
         </InstaWrapper>)
 }
 
