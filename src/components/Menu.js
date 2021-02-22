@@ -14,10 +14,12 @@ const MenuMenu = styled.div`
     max-width: 500px;
     padding-bottom: 50px;
     border: 2px solid black;
-    margin: 50px auto 20px;
     box-sizing: border-box;
     position: relative;
     text-transform: uppercase;
+    @media(max-width: 1000px) {
+        margin: 0 auto;
+    }
 
     /* Second Border */
     &:before { 

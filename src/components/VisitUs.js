@@ -14,7 +14,6 @@ const VisitUsWrapper = styled.div`
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
-    margin-top: 50px;
     padding-top: 99.5%;
     position: relative;
     @media(max-width: 1000px) {
