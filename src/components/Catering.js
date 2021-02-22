@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import LPNCar from '../images/LPNbilen.png';
+import LPNCar from '../images/La-Piccola-Nonna-car.JPG';
 
 const CateringWrapper = styled.div`
     grid-column: span 5;
@@ -37,6 +37,7 @@ const CateringContent = styled.div`
         padding-top: 20px;
         font-family: 'PlatonickFont';
         font-size: 50px;
+        text-shadow: 2px 2px 6px white;
     }
     span{
         text-align: center;
