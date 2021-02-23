@@ -9,6 +9,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-ig-feed": "^1.0.4",
+    "react-multi-carousel": "^2.6.1",
     "react-scripts": "4.0.1",
     "styled-components": "^5.2.1",
     "use-instagram-feed": "^1.0.0",

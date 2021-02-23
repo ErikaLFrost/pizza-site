@@ -4,10 +4,10 @@ import styled from 'styled-components';
 const SectionWrapper = styled.div`
     grid-column: span 6;
     background: linear-gradient(
-        rgba(251, 205, 205, 0.52), 
-        rgba(251, 205, 205, 0.52)
-        /* rgba(242, 150, 153, 0.2), 
-        rgba(242, 150, 153, 0.4) */
+        /* rgba(251, 205, 205, 0.52), 
+        rgba(251, 205, 205, 0.52) */
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
         ),url(${props => props.bgImage && props.bgImage});
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,6 +40,7 @@ const SectionContent = styled.div`
     }
 
     p {
+        color: white;
         text-align: center;
         line-height: 1.6;
         margin-top: 0;
@@ -47,8 +48,8 @@ const SectionContent = styled.div`
         font-size: 1rem;
         padding: 0 10px;
         font-weight: 600;
-        /* text-shadow: 0 1px 1px rgba(242, 150, 153, 0.5), 0 0 5px rgba(242, 150, 153, 0.4), 0 0 30px rgba(242, 150, 153, 0.7); */
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
+        /* text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7); */
     }
 `;
 

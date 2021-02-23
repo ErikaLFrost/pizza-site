@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useInstagramFeed } from 'use-instagram-feed';
+/* import { useInstagramFeed } from 'use-instagram-feed'; */
 import '../fonts/fonts';
 import InstagramFeed from 'react-ig-feed'
 import 'react-ig-feed/dist/index.css'
@@ -31,12 +31,12 @@ const InstaWrapper = styled.div`
     }
 `;
 
-const InstaIframe = styled.iframe`
+/* const InstaIframe = styled.iframe`
     width:100%;
     height: 66vw;
     border:0;
     overflow:hidden;
-`
+`; */
 
 const FollowUs = styled.h3`
     font-family: 'Raleway';
@@ -58,10 +58,10 @@ const FollowUs = styled.h3`
     }
 `;
 
-const InstaFeedWapper = styled.div`
+/* const InstaFeedWapper = styled.div`
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-`;
+`; */
 
 const StyledInstaFeed = styled(InstagramFeed)`
     /* display: grid !important;
