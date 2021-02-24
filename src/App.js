@@ -11,6 +11,7 @@ import AboutUs from './components/AboutUs';
 import Insta from './components/Insta';
 import Sticky from './components/Sticky';
 import Crew from './components/Crew';
+import Navigation from './components/Navigation';
 
 const MainWrapper = styled.div`
   position: relative;
@@ -30,6 +31,7 @@ const GridWrapper = styled.div`
 function App() {
   return (
     <MainWrapper>
+      <Navigation />
       <Sticky />
       <GlobalFonts />
       <Hero />

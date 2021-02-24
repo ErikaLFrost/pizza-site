@@ -7,7 +7,8 @@ const NavigationWrapper = styled.div`
 
 
 const Navigation = () => {
-    return (<NavigationWrapper />)
+    return (<NavigationWrapper>
+            </NavigationWrapper>)
 } 
 
 export default Navigation;
