@@ -15,6 +15,8 @@ const InstaWrapper = styled.div`
     grid-column: span 12;
     align-items: center;
     justify-content: center;
+    background-color: #f9e3e4;
+    padding-bottom: 3rem;
     div {
         padding: .1rem;
         @media(max-width: 1000px) {
@@ -43,6 +45,7 @@ const FollowUs = styled.h3`
     grid-column: span 12;
     text-align: center;
     font-size: 40px;
+    padding-top: 2rem;
     /* filter: drop-shadow(0px 0px 1px white); */
     
     a {
