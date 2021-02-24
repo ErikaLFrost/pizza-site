@@ -12,6 +12,7 @@ const VisitUsWrapper = styled.div`
     url(${VisitUsImg});
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: 50px;
     width: 100%;
     height: 0;
     padding-top: 99.5%;

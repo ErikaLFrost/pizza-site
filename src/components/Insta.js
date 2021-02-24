@@ -15,16 +15,21 @@ const InstaWrapper = styled.div`
     grid-column: span 12;
     align-items: center;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
     div {
         padding: .1rem;
         @media(max-width: 1000px) {
             grid-column: span 4;
         }
     }
+
     a {
         color: black;
         text-decoration: none;
     }
+    
     img {
         width: 100%;
         height: 100%
