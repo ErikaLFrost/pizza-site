@@ -13,18 +13,28 @@ const StickyMenu = styled.div`
     z-index: 2;
     margin: 0;
 
-    p{
+    p {
         margin: 0;
         text-align: center;
         padding: 6px 0;
-        font-family: 'Menlo';
-        font-size: 20px;
+        font-size: 24px;
+
+        a {
+            color: black;
+            text-decoration: none;
+            transition: color ease-in-out 200ms;
+
+            &:hover {
+                color: white;
+                filter: drop-shadow(0px 0px 1px white);
+            }
+        }
     }
 `;
 
 const Sticky = () => {
     return (<StickyMenu>
-                <p>Take Away - 070 123 45 67</p>
+                <p>Take Away - <a href="tel:+4673-234-74-55">073 234 74 55</a></p>
             </StickyMenu>)
 }
 

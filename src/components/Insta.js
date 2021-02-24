@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useInstagramFeed } from 'use-instagram-feed';
+/* import { useInstagramFeed } from 'use-instagram-feed'; */
 import '../fonts/fonts';
 import InstagramFeed from 'react-ig-feed'
 import 'react-ig-feed/dist/index.css'
@@ -17,28 +17,33 @@ const InstaWrapper = styled.div`
     justify-content: center;
     background-color: #f9e3e4;
     padding-bottom: 3rem;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+
     div {
         padding: .1rem;
         @media(max-width: 1000px) {
             grid-column: span 4;
         }
     }
+
     a {
         color: black;
         text-decoration: none;
     }
+    
     img {
         width: 100%;
         height: 100%
     }
 `;
 
-const InstaIframe = styled.iframe`
+/* const InstaIframe = styled.iframe`
     width:100%;
     height: 66vw;
     border:0;
     overflow:hidden;
-`
+`; */
 
 const FollowUs = styled.h3`
     font-family: 'Raleway';
@@ -61,10 +66,10 @@ const FollowUs = styled.h3`
     }
 `;
 
-const InstaFeedWapper = styled.div`
+/* const InstaFeedWapper = styled.div`
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-`;
+`; */
 
 const StyledInstaFeed = styled(InstagramFeed)`
     /* display: grid !important;
@@ -86,7 +91,7 @@ const Insta = () => {
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer">@piccolanonna</a>{"\n"}
             </FollowUs>
             {/* <InstaFeedWapper> */}
-                <StyledInstaFeed token={token} counter="4" /* style="display:grid" */ />
+                <StyledInstaFeed token={token} counter="6" /* style="display:grid" */ />
             {/* </InstaFeedWapper> */}
         </InstaWrapper>)
 }
