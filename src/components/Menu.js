@@ -17,8 +17,10 @@ const MenuMenu = styled.div`
     box-sizing: border-box;
     position: relative;
     text-transform: uppercase;
-    @media(max-width: 1000px) {
-        margin: 0 auto;
+    margin: 0 auto;
+    @media(min-width: 1000px) {
+        max-width: 800px;
+        margin: 0 0 0 5px;
     }
 
     /* Second Border */
@@ -33,26 +35,37 @@ const MenuMenu = styled.div`
         border: 2px solid black;
     }
 
-    h1{
+    h1 {
         text-align: center;
         font-size: 60px;
         filter: drop-shadow(0 0 0.5rem rgba(251, 205, 205, 0.5));
         /* filter: drop-shadow(0px 0px 1px white); */
+
+        @media(min-width: 1000px) {
+            font-size: 80px;
+            margin: 20px 0;
+        }
     }
 
-    h2{
+    h2 {
         font-family: 'PlatonickFont';
         text-align: center;
         font-size: 20px;
         margin-bottom: 0;
+        @media(min-width: 1000px) {
+            font-size: 30px;   
+        }
     }
 
-    p{
+    p {
         text-align: center;
         font-family: 'Menlo';
         margin: 0;
         padding: 0 10px;
         font-size: 11px;
+        @media(min-width: 1000px) {
+            font-size: 16px;   
+        }
     }
 `;
 
