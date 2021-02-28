@@ -3,12 +3,8 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div`
     grid-column: span ${props => props.span === '5' ? '5/13' : '6'};
-    background: linear-gradient(
-        /* rgba(251, 205, 205, 0.52), 
-        rgba(251, 205, 205, 0.52) */
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ),url(${props => props.bgImage && props.bgImage});
+    background: ${props => props.shading && 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))'};
+    background-image: url(${props => props.bgImage && props.bgImage});
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -72,9 +68,9 @@ const BlurContainerList = styled.div`
     filter: blur(120px);
 `;
 
-const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop }) => {
+const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading }) => {
     return (
-        <SectionWrapper bgImage={bgImage} imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop}>
+        <SectionWrapper bgImage={bgImage} imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading}>
             <SectionContent>
                 <BlurContainer />
                 <BlurContainerList />

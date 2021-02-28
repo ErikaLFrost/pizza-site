@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const Hamburger = styled.div`
-
+const Hamburger = styled.button`
+content: "HALLÅ";
+height: 200px;
+width: 200px;
 `;
 
 const MenuOpen = styled.div`
     position: fixed;
     top: 0;
-    right: -100%;
+    right: ${props => props.showNav ? '0' : '-100%'};
     width: 100%;
     height: 50vh;
     background: green;
@@ -17,7 +19,7 @@ const MenuOpen = styled.div`
     ul {
         list-style-type: none;
         padding: 0;
-        margin 0;
+        margin: 0;
     }
 
     a {
@@ -25,15 +27,14 @@ const MenuOpen = styled.div`
     }
 `;
 
-/* const MenuClosed = styled.div`
-
-`; */
-
 const Navigation = () => {
+    const [open, setOpen] = useState(false)
+
     return (
         <>
-            <Hamburger />
-            <MenuOpen>
+            <Hamburger onClick={() => setOpen(open ? false : true)} />
+            {open && "HALLOJ"}
+            <MenuOpen showNav={open}>
                 <ul>
                     <li><a href="/">Link 1</a></li>
                     <li><a href="/">Link 1</a></li>
@@ -43,6 +44,6 @@ const Navigation = () => {
             </MenuOpen>
         </>
     )
-} 
+}
 
 export default Navigation;
