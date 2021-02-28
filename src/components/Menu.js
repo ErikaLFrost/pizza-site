@@ -59,13 +59,22 @@ const MenuMenu = styled.div`
 
     p {
         text-align: center;
-        font-family: 'Menlo';
         margin: 0;
         padding: 0 10px;
         font-size: 11px;
         @media(min-width: 1000px) {
             font-size: 16px;   
         }
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        margin: 26px 0 0;
+        font-size: 16px;
+        font-weight: 600;
+        @media(min-width: 1000px) {
+            font-size: 18px;  
     }
 `;
 
@@ -87,6 +96,7 @@ const Menu = () => {
                     <p>(Bianca) Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter, Honung, Evo</p>
                     <h2>Blue Vegan</h2>
                     <p>(Bianca) Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron, Valnötter, Lönnsirap, Evo</p>
+                    <span>Alla pizzor 85 kr</span>
                 </MenuMenu>
             </MenuWrapper>)
 } 
