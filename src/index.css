@@ -16,6 +16,17 @@ code {
   grid-template-columns: repeat(12, [col-start] 1fr) !important; 
 }
 
+._3xnQP {
+  padding: 0 !important;
+  background-color: transparent;
+  transition: background 100ms ease-out;
+}
+
+._3xnQP:hover {
+  color: white !important;
+  background-color: rgba(251, 205, 205, 0.3) !important;
+}
+
 ._wPDyp {
   /* flex-grow: 1 !important; */
   grid-column: span 2 !important;

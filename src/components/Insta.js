@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-/* import { useInstagramFeed } from 'use-instagram-feed'; */
 import '../fonts/fonts';
 import InstagramFeed from 'react-ig-feed'
 import 'react-ig-feed/dist/index.css'
@@ -76,9 +75,9 @@ const Insta = () => {
     return (
         <InstaWrapper>
             <FollowUs>
-                <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer">@piccolanonna</a>{"\n"}
+                <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer" title="Link to Instagram">@piccolanonna</a>{"\n"}
             </FollowUs>
-                <StyledInstaFeed token={token} counter="6" /* style="display:grid" */ />
+                <StyledInstaFeed token={token} counter="6" />
         </InstaWrapper>)
 }
 

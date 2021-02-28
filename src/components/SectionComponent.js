@@ -74,6 +74,8 @@ const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, margi
             <SectionContent>
                 <BlurContainer />
                 <BlurContainerList />
+                {/* Detta är istället för alt-tagg för bakgrundsbilden */}
+                <span class="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
                 <h2>{title}</h2>
                     <p>
                         {spanText}

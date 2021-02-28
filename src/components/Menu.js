@@ -66,7 +66,8 @@ const MenuMenu = styled.div`
             font-size: 16px;   
         }
     }
-
+    
+    /* Alla Pizzor 85 kr */
     span {
         display: block;
         text-align: center;
