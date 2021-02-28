@@ -10,7 +10,7 @@ const StickyMenu = styled.div`
     bottom: 0;
     left: 0;
     background-color: #A7A7A7;
-    z-index: 2;
+    z-index: 700;
     margin: 0;
 
     p {
