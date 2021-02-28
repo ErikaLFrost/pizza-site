@@ -38,20 +38,14 @@ const InstaWrapper = styled.div`
     }
 `;
 
-/* const InstaIframe = styled.iframe`
-    width:100%;
-    height: 66vw;
-    border:0;
-    overflow:hidden;
-`; */
-
 const FollowUs = styled.h3`
+    display: table;
+    margin: 0 auto;
     font-family: 'Raleway';
     grid-column: span 12;
     text-align: center;
     font-size: 40px;
-    padding-top: 2rem;
-    /* filter: drop-shadow(0px 0px 1px white); */
+    padding: 20px;
     
     a {
         transition: color ease-in-out 200ms;
@@ -66,11 +60,6 @@ const FollowUs = styled.h3`
     }
 `;
 
-/* const InstaFeedWapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
-`; */
-
 const StyledInstaFeed = styled(InstagramFeed)`
     /* display: grid !important;
     div{
@@ -81,7 +70,6 @@ const StyledInstaFeed = styled(InstagramFeed)`
         grid-template-columns: repeat(12, [col-start] 1fr);
         }
     } */
-
 `;
 
 const Insta = () => {
@@ -90,9 +78,7 @@ const Insta = () => {
             <FollowUs>
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer">@piccolanonna</a>{"\n"}
             </FollowUs>
-            {/* <InstaFeedWapper> */}
                 <StyledInstaFeed token={token} counter="6" /* style="display:grid" */ />
-            {/* </InstaFeedWapper> */}
         </InstaWrapper>)
 }
 
