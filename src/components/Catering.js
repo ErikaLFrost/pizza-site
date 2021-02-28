@@ -12,7 +12,7 @@ lapiccolanonna@gmail.com`;
 
 const Catering = () => {
     return (
-        <SectionComponent title={cateringTitle} spanText={cateringSpan} bgImage={cateringImg} />
+        <SectionComponent title={cateringTitle} spanText={cateringSpan} bgImage={cateringImg} span={'6'} />
     )
 }
 

@@ -12,6 +12,7 @@ import Insta from './components/Insta';
 import Sticky from './components/Sticky';
 import Crew from './components/Crew';
 import Navigation from './components/Navigation';
+import PizzaImg from './components/PizzaImg';
 
 const MainWrapper = styled.div`
   position: relative;
@@ -35,14 +36,15 @@ function App() {
       <Sticky />
       <GlobalFonts />
       <Hero />
-        <GridWrapper>
-          <Menu />
-          <VisitUs />
-          <Catering />
-          <Merch />
-          <AboutUs />
-          <Crew />
-        </GridWrapper>
+      <GridWrapper>
+        <Menu />
+        <VisitUs />
+        <Catering />
+        <Merch />
+        <AboutUs />
+        <PizzaImg />
+        <Crew />
+      </GridWrapper>
       <Insta />
     </MainWrapper>
   );

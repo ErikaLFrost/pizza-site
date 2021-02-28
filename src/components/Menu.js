@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import '../fonts/fonts';
 
 const MenuWrapper = styled.div`
-    grid-column: span 7;
+    grid-column: span 6;
     @media(max-width: 1000px) {
         grid-column: span 12;
     }

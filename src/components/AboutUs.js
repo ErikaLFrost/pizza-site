@@ -11,7 +11,7 @@ const aboutUsSpan =
 
 const AboutUs = () => {
     return (
-        <SectionComponent title={aboutUsTitle} spanText={aboutUsSpan} bgImage={aboutUsImg} />
+        <SectionComponent title={aboutUsTitle} spanText={aboutUsSpan} bgImage={aboutUsImg} span={'6'} />
     )
 }
 

@@ -24,8 +24,10 @@ const MerchWrapper = styled.div`
     margin-top: 40px;
     padding-top: 116.5%;
     position: relative;
+    margin-top: -326px;
     @media(max-width: 1000px) {
         grid-column: span 12;
+        margin-top: 29px;
     }
 `;
 
