@@ -30,7 +30,7 @@ const Logo = styled.div`
             width: 40%;   
         }
     }
-`
+`;
 
 const flicker = keyframes`
   from  { opacity: 0; }
