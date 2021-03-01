@@ -14,6 +14,8 @@ const SectionWrapper = styled.div`
     position: relative;
     @media(max-width: 1000px) {
         grid-column: span 12;
+        margin-top: 50px;
+        display: ${props => props.hideOnMobile && 'none'}
     }
 `;
 
@@ -68,14 +70,14 @@ const BlurContainerList = styled.div`
     filter: blur(120px);
 `;
 
-const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading }) => {
+const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile }) => {
     return (
-        <SectionWrapper bgImage={bgImage} imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading}>
+        <SectionWrapper bgImage={bgImage} imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading} hideOnMobile={hideOnMobile}>
             <SectionContent>
                 <BlurContainer />
                 <BlurContainerList />
                 {/* Detta är istället för alt-tagg för bakgrundsbilden */}
-                <span class="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
+                <span className="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
                 <h2>{title}</h2>
                     <p>
                         {spanText}
