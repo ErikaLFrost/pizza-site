@@ -80,7 +80,7 @@ const MenuMenu = styled.div`
 `;
 
 const Menu = () => {
-    return (<MenuWrapper>
+    return (<MenuWrapper id="menuSection">
                 <MenuMenu>
                     <h1>Menu</h1>
                     <h2>Marinara</h2>

@@ -73,7 +73,7 @@ const BlurContainerList = styled.div`
 
 const VisitUs = () => {
     return (
-        <VisitUsWrapper>
+        <VisitUsWrapper id="visitUsSection">
             <VisitUsContent>
                 <BlurContainer />
                 <BlurContainerList />
