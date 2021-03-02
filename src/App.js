@@ -17,7 +17,6 @@ import PizzaImg from './components/PizzaImg';
 const MainWrapper = styled.div`
   position: relative;
   background-color: #F29699;
-  /* padding-bottom: 50px; */
 `;
 
 const GridWrapper = styled.div`
@@ -28,7 +27,7 @@ const GridWrapper = styled.div`
   padding-bottom: 3rem;
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-`
+`;
 
 function App() {
   return (

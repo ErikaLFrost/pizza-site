@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div`
     grid-column: span ${props => props.span === '5' ? '5/13' : '6'};
+    /* Denna måste lösas */
     background: ${props => props.shading && 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))'};
     background-image: url(${props => props.bgImage && props.bgImage});
     background-size: cover;
@@ -12,10 +13,13 @@ const SectionWrapper = styled.div`
     margin-top: ${props => props.marginTop ? props.marginTop : '70px' } ;
     padding-top: ${props => props.imgProportion ? props.imgProportion : '99.5%'};
     position: relative;
+    border-radius: 5px;
+
     @media(max-width: 1000px) {
         grid-column: span 12;
         margin-top: 50px;
-        display: ${props => props.hideOnMobile && 'none'}
+        display: ${props => props.hideOnMobile && 'none'};
+        border-radius: 0;
     }
 `;
 
@@ -43,11 +47,10 @@ const SectionContent = styled.div`
         line-height: 1.6;
         margin-top: 0;
         margin-bottom: .5rem;
-        font-size: 1rem;
+        font-size: 1em;
         padding: 0 10px;
         font-weight: 600;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
-        /* text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7); */
     }
 `;
 

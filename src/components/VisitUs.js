@@ -16,9 +16,12 @@ const VisitUsWrapper = styled.div`
     height: 0;
     padding-top: 99.5%;
     position: relative;
+    border-radius: 5px;
+
     @media(max-width: 1000px) {
         grid-column: span 12;
         margin-top: 50px;
+        border-radius: 0;
     }
 `;
 
