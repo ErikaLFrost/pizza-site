@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Hamburger = styled.button`
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     background-color: transparent;
     border: 2px solid white;
     z-index: 9000;
@@ -12,7 +12,9 @@ const Hamburger = styled.button`
     padding: 0px 0 0 14px;
     width: 66px;
     height: 66px;
-    filter: drop-shadow(0 0 0.5rem rgba(250, 0, 0, 0.76));
+    border-left-color: green;
+    border-right-color: red;
+    cursor: pointer;
 
     :focus {
         outline: none;
@@ -21,6 +23,7 @@ const Hamburger = styled.button`
 
 const HamburgerLinesContainer = styled.div`
     background-color: transparent;
+
     div {
         width: 35px;
         height: 5px;
@@ -79,10 +82,12 @@ const Navigation = () => {
             {open}
             <MenuOpen showNav={open}>
                 <ul>
-                    <li><a href="#topSection">Top</a></li>
-                    <li><a href="#menuSection">Meny</a></li>
-                    <li><a href="#visitUsSection">Öppettider</a></li>
-                    <li><a href="#aboutUsSection">Om oss</a></li>
+                    <li><a onClick={() => setOpen(open ? false : true)} href="#topSection">Top</a></li>
+                    <li><a onClick={() => setOpen(open ? false : true)} href="#menuSection">Meny</a></li>
+                    <li><a onClick={() => setOpen(open ? false : true)} href="#visitUsSection">Öppettider</a></li>
+                    <li><a onClick={() => setOpen(open ? false : true)} href="#cateringSection">Catering</a></li>
+                    <li><a onClick={() => setOpen(open ? false : true)} href="#merchSection">Merchandise</a></li>
+                    <li><a onClick={() => setOpen(open ? false : true)} href="#aboutUsSection">Om oss</a></li>
                 </ul>
             </MenuOpen>
         </>

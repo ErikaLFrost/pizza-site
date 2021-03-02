@@ -43,7 +43,7 @@ const MerchTitle = styled.h2`
 
 const Merch = () => {
     return (
-        <MerchWrapper>
+        <MerchWrapper id="merchSection">
             <MerchTitle>Merch</MerchTitle>
             <Carousel 
                 responsive={responsive}

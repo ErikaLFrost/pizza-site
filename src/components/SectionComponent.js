@@ -70,9 +70,9 @@ const BlurContainerList = styled.div`
     filter: blur(120px);
 `;
 
-const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile }) => {
+const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile, id }) => {
     return (
-        <SectionWrapper bgImage={bgImage} imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading} hideOnMobile={hideOnMobile}>
+        <SectionWrapper bgImage={bgImage} imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading} hideOnMobile={hideOnMobile} id={id}>
             <SectionContent>
                 <BlurContainer />
                 <BlurContainerList />
