@@ -104,8 +104,9 @@ const AboutUs = () => {
     return (<>
         <SectionWrapper >
             <SectionContent>
+                {/* //Ändra blureffekt
                 <BlurContainer />
-                <BlurContainerList />
+                <BlurContainerList /> */}
                 {/* Detta är istället för alt-tagg för bakgrundsbilden */}
                 <span className="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
             </SectionContent>

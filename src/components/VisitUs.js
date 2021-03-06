@@ -77,8 +77,9 @@ const VisitUs = () => {
     return (
         <VisitUsWrapper id="visitUsSection">
             <VisitUsContent>
+                {/* //Ändra blureffekt
                 <BlurContainer />
-                <BlurContainerList />
+                <BlurContainerList /> */}
                 <h2>Besök oss</h2>
                 <span><p>{`
                     Södermalm \n`}</p>

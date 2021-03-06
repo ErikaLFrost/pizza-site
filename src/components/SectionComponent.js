@@ -77,8 +77,9 @@ const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, margi
     return (<>
         <SectionWrapper imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading} hideOnMobile={hideOnMobile} id={id}>
             <SectionContent bgImage={bgImage}>
+                {/* //Ändra blureffekt
                 <BlurContainer />
-                <BlurContainerList />
+                <BlurContainerList /> */}
                 {/* Detta är istället för alt-tagg för bakgrundsbilden */}
                 <span className="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
                 <h2>{title}</h2>
