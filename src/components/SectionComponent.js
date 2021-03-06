@@ -4,13 +4,9 @@ import styled from 'styled-components';
 const SectionWrapper = styled.div`
     grid-column: span ${props => props.span === '5' ? '5/13' : '6'};
     /* Denna måste lösas */
-    background: ${props => props.shading && 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))'};
-    background-image: url(${props => props.bgImage && props.bgImage});
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 0;
-    margin-top: ${props => props.marginTop ? props.marginTop : '70px' } ;
+    margin-top: ${props => props.marginTop ? props.marginTop : '70px'} ;
     padding-top: ${props => props.imgProportion ? props.imgProportion : '99.5%'};
     position: relative;
     border-radius: 5px;
@@ -24,6 +20,10 @@ const SectionWrapper = styled.div`
 `;
 
 const SectionContent = styled.div`
+    background: ${props => props.shading && 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))'};
+    background-image: url(${props => props.bgImage && props.bgImage});
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     display: flex;
@@ -74,19 +74,20 @@ const BlurContainerList = styled.div`
 `;
 
 const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile, id }) => {
-    return (
-        <SectionWrapper bgImage={bgImage} imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading} hideOnMobile={hideOnMobile} id={id}>
-            <SectionContent>
+    return (<>
+        <SectionWrapper imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading} hideOnMobile={hideOnMobile} id={id}>
+            <SectionContent bgImage={bgImage}>
                 <BlurContainer />
                 <BlurContainerList />
                 {/* Detta är istället för alt-tagg för bakgrundsbilden */}
                 <span className="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
                 <h2>{title}</h2>
-                    <p>
-                        {spanText}
-                    </p>
+                <p>
+                    {spanText}
+                </p>
             </SectionContent>
         </SectionWrapper>
+    </>
     )
 }
 

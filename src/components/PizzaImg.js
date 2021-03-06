@@ -3,7 +3,7 @@ import SectionComponent from './SectionComponent';
 
 const PizzaImg = () => {
     return (
-        <SectionComponent bgImage={pizzaImg} span={'5'} marginTop={'-329px'} paddingTop={'86.5%'}/>
+        <SectionComponent bgImage={pizzaImg} span={'5'} marginTop={'-390px'} paddingTop={'86.5%'}/>
     )
 }
 
