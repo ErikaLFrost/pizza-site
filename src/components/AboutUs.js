@@ -40,7 +40,7 @@ const AboutUsContent = styled.div`
 
 const AboutUs = () => {
     return (
-        <AboutUsWrapper>
+        <AboutUsWrapper id="aboutUsSection">
             <AboutUsContent>
                 <h2>Om oss</h2>
                 <p>
