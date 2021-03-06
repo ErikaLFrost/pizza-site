@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import crewImage from '../images/crew.jpg';
-import SectionComponent from './SectionComponent';
 
 const AboutUsWrapper = styled.div`
     grid-column: span 5/13;
@@ -29,8 +27,14 @@ const AboutUsWrapper = styled.div`
 `;
 
 const AboutUsContent = styled.div`
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    @media(max-width: 1000px) {
+        width: 80%;
+    }
+    @media(max-width: 425px) {
+        width: 100%;
+    }
 `;
 
 const AboutUs = () => {
