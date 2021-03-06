@@ -5,8 +5,6 @@ import 'react-ig-feed/dist/index.css'
 
 /* Se index.css för mer styling */
 
-console.log("InstagramFeed", InstagramFeed)
-
 const token = "IGQVJYRWM3UWxULUU2QWttdWw5NTFScHU4VURUR2E4LVdNVDBCdnZAVb09wWFNCbDBLUXBZAWGxEbEJfc1dCcmtaYjdUYVlwbTAwZAkc2RFJtMVZAMeXpUVkJDbmZArbnBISWtjWWNnc0g2RTlBbmpyYllrTgZDZD";
 
 const InstaWrapper = styled.div`
