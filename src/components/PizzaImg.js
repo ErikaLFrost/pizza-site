@@ -1,4 +1,3 @@
-import React from 'react';
 import pizzaImg from '../images/pizza-image.jpg';
 import SectionComponent from './SectionComponent';
 

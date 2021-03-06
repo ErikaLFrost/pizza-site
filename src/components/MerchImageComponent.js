@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const MerchImage = styled.div`
@@ -14,6 +13,7 @@ const MerchImage = styled.div`
     padding-top: 116.5%;
     @media(max-width: 1000px) {
         grid-column: span 12;
+    }
 `;
 
 const MerchImageComponent = ({ merchImage }) => {

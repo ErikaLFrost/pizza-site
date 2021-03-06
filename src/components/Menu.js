@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import '../fonts/fonts';
 
@@ -78,29 +77,30 @@ const MenuMenu = styled.div`
         @media(min-width: 1000px) {
             font-size: 18px;  
     }
+}
 `;
 
 const Menu = () => {
     return (<MenuWrapper id="menuSection">
-                <MenuMenu>
-                    <h1>Menu</h1>
-                    <h2>Marinara</h2>
-                    <p>San Marzanotomater, Vitlök, Oregano, Evo</p>
-                    <h2>Margherita</h2>
-                    <p>San Marzanotomater, Fior di Latte, Pecorino, Basilika, Evo</p>
-                    <h2>Margherita Vegan</h2>
-                    <p>San Marzanotomater, Greenvie-Mozzarella, Parveggio, Basilika, Evo</p>
-                    <h2>Nduja</h2>
-                    <p>San Marzanotomater, Fior di Latte, Veg Nduja, Grönkål, Pecorino, Evo</p>
-                    <h2>Nduja Vegan</h2>
-                    <p>San Marzanotomater, Greenvie-Mozzarella, Veg Nduja, Grönkål, Parveggio, Evo</p>
-                    <h2>Blue</h2>
-                    <p>(Bianca) Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter, Honung, Evo</p>
-                    <h2>Blue Vegan</h2>
-                    <p>(Bianca) Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron, Valnötter, Lönnsirap, Evo</p>
-                    <span>Alla pizzor 85 kr</span>
-                </MenuMenu>
-            </MenuWrapper>)
-} 
+        <MenuMenu>
+            <h1>Menu</h1>
+            <h2>Marinara</h2>
+            <p>San Marzanotomater, Vitlök, Oregano, Evo</p>
+            <h2>Margherita</h2>
+            <p>San Marzanotomater, Fior di Latte, Pecorino, Basilika, Evo</p>
+            <h2>Margherita Vegan</h2>
+            <p>San Marzanotomater, Greenvie-Mozzarella, Parveggio, Basilika, Evo</p>
+            <h2>Nduja</h2>
+            <p>San Marzanotomater, Fior di Latte, Veg Nduja, Grönkål, Pecorino, Evo</p>
+            <h2>Nduja Vegan</h2>
+            <p>San Marzanotomater, Greenvie-Mozzarella, Veg Nduja, Grönkål, Parveggio, Evo</p>
+            <h2>Blue</h2>
+            <p>(Bianca) Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter, Honung, Evo</p>
+            <h2>Blue Vegan</h2>
+            <p>(Bianca) Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron, Valnötter, Lönnsirap, Evo</p>
+            <span>Alla pizzor 85 kr</span>
+        </MenuMenu>
+    </MenuWrapper>)
+}
 
 export default Menu;

@@ -1,5 +1,4 @@
 import './App.css';
-import React from 'react';
 import styled from 'styled-components';
 import GlobalFonts from './fonts/fonts';
 import Hero from './components/Hero';

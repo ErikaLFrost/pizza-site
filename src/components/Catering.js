@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionComponent from './SectionComponent';
 import cateringImg from '../images/La-Piccola-Nonna-car.JPG';
 

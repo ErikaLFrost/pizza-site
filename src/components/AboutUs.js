@@ -1,4 +1,3 @@
-import React from 'react';
 import aboutUsImg from '../images/baking.jpg';
 import SectionComponent from './SectionComponent';
 
