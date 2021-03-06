@@ -51,7 +51,7 @@ const FollowUs = styled.h3`
     :hover {
         a {
             filter: drop-shadow(0px 0px 1px white);
-            color: white;
+            color: #f29699;
         }
     }
 `;
