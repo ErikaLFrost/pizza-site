@@ -8,7 +8,7 @@ import Merch from './components/Merch';
 import AboutUs from './components/AboutUs';
 import Insta from './components/Insta';
 import Sticky from './components/Sticky';
-import Crew from './components/Crew';
+import CrewImg from './components/CrewImg';
 import Navigation from './components/Navigation';
 import PizzaImg from './components/PizzaImg';
 
@@ -39,9 +39,9 @@ function App() {
         <VisitUs />
         <Catering />
         <Merch />
-        <AboutUs />
+        <CrewImg />
         <PizzaImg />
-        <Crew />
+        <AboutUs />
       </GridWrapper>
       <Insta />
     </MainWrapper>
