@@ -5,13 +5,13 @@ const AboutUsWrapper = styled.div`
     text-align: center;
     margin-top: -509px;
     padding: 18px 0;
-    background-color: #cecdcd;
+    background-color: #f9e3e4;
     h2 {
         margin: 0;
         font-size: 60px;
     }
     p {
-        color: white;
+        color: black;
         text-align: center;
         line-height: 1.6;
         margin-top: 0;
@@ -23,6 +23,7 @@ const AboutUsWrapper = styled.div`
     @media(max-width: 1000px) {
         grid-column: span 12;
         margin-top: 50px;
+        background-color: transparent;
     }
 `;
 
