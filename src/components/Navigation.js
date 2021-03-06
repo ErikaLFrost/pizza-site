@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 const Hamburger = styled.button`
@@ -59,13 +60,15 @@ const MenuOpen = styled.div`
             padding: 10px 0;
         }
     }
-    
-    a {
+`;
+
+const StyledLink = styled(Link)`
         color: white;
         text-decoration: none;
         font-size: 20px;
-    }
+        cursor: pointer;
 `;
+
 
 const Navigation = () => {
     const [open, setOpen] = useState(false)
@@ -82,12 +85,36 @@ const Navigation = () => {
             {open}
             <MenuOpen showNav={open}>
                 <ul>
-                    <li><a onClick={() => setOpen(open ? false : true)} href="#topSection">Top</a></li>
-                    <li><a onClick={() => setOpen(open ? false : true)} href="#menuSection">Meny</a></li>
-                    <li><a onClick={() => setOpen(open ? false : true)} href="#visitUsSection">Öppettider</a></li>
-                    <li><a onClick={() => setOpen(open ? false : true)} href="#cateringSection">Catering</a></li>
-                    <li><a onClick={() => setOpen(open ? false : true)} href="#merchSection">Merchandise</a></li>
-                    <li><a onClick={() => setOpen(open ? false : true)} href="#aboutUsSection">Om oss</a></li>
+                    <li>
+                        <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="topSection" duration={200} smooth={true}>
+                            Top
+                            </StyledLink>
+                    </li>
+                    <li>
+                        <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="menuSection" duration={200} smooth={true}>
+                            Meny
+                            </StyledLink>
+                    </li>
+                    <li>
+                        <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="visitUsSection" duration={200} smooth={true}>
+                            Öppettider
+                            </StyledLink>
+                    </li>
+                    <li>
+                        <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="cateringSection" duration={200} smooth={true}>
+                            Catering
+                            </StyledLink>
+                    </li>
+                    <li>
+                        <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="merchSection" duration={200} smooth={true}>
+                            Merchandise
+                            </StyledLink>
+                    </li>
+                    <li>
+                        <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="aboutUsSection" duration={200} smooth={true}>
+                            Om oss
+                            </StyledLink>
+                    </li>
                 </ul>
             </MenuOpen>
         </>
