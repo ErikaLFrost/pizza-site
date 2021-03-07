@@ -53,9 +53,8 @@ code {
 }
 
 .react-multiple-carousel__arrow {
-  background: rgba(0,0,0,0.5) !important;
   background: #F29699 !important;
-  transition: all 200ms !important;
+  transition: background 200ms !important;
 }
 
 .react-multiple-carousel__arrow::before {
@@ -63,12 +62,11 @@ code {
 }
 
 .react-multiple-carousel__arrow:hover {
-  background: #F29699 !important;
-  background: rgba(0,0,0,0.5) !important;
+  background: #f9e3e4 !important;
 }
 
 .react-multiple-carousel__arrow:hover::before {
-  color: white !important;
+  color: black !important;
 }
 
 .react-multi-carousel-dot-list {

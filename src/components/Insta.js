@@ -40,7 +40,7 @@ const FollowUs = styled.h3`
     font-family: 'Raleway';
     grid-column: span 12;
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     padding: 20px;
     
     a {

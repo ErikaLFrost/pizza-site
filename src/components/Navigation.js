@@ -38,13 +38,15 @@ const MenuOpen = styled(animated.div)`
     position: fixed;
     top: 0;
     right: 0px;
-    width: 50vw;
-    max-width: 500px;
+    width: 100vw;
     height: 100vh;
     background: #F29699;
     z-index: 1111;
-    /* transition: right 300ms ease-in; */
-    border-left: 2px solid white;
+    border-left: 2px solid #f8e3e3;
+
+    @media(min-width: 1000px) {
+        width: 500px;
+    }
 
     ul {
         list-style-type: none;
@@ -80,13 +82,15 @@ const flicker = keyframes`
 const StyledLink = styled(Link)`
         color: white;
         text-decoration: none;
-        font-size: clamp(1.6rem, 3vw, 3vw);
+        font-size: clamp(1.6rem, 2vw, 2vw);
         cursor: pointer;
-        filter: drop-shadow(0 0 0.5rem rgba(250, 0, 0, 0.76));
+        
         :hover{
             animation: ${flicker} 5s linear infinite;
             color: #e66879;
+            color: white;
             filter: drop-shadow(0 0 0.5rem rgba(243, 180, 182, 0.76));
+            text-decoration: underline;
         }
 `;
 
