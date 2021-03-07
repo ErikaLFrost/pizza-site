@@ -115,10 +115,10 @@ const Navigation = () => {
     const navigationTransition = useTransition(open, null, {
         config: {
             tension: 100,
-            duration: windowWidth > 1000 ? 200 : 80,
-            friction: windowWidth > 1000 ? 80 : 10
+            duration: windowWidth > 1000 ? 200 : 150,
+            friction: windowWidth > 1000 ? 80 : 0
         },
-        from: { transform: 'translateX(30%)', opacity: 0 },
+        from: { transform: windowWidth > 1000 ? 'translateX(30%)' : 'translateX(15%)', opacity: 0 },
         enter: { transform: 'translateX(0%)', opacity: 1 },
         leave: { transform: windowWidth > 1000 ? 'translateX(30%)' : 'translateX(15%)', opacity: 1 },
     })
@@ -137,32 +137,38 @@ const Navigation = () => {
                     <MenuOpen style={props} key={key}>
                         <ul>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="topSection" duration={200} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
+                                to="topSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
                                     Top
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="menuSection" duration={200} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
+                                to="menuSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
                                     Meny
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="visitUsSection" duration={200} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
+                                to="visitUsSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
                                     Öppettider
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="cateringSection" duration={200} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
+                                to="cateringSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
                                     Catering
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="merchSection" duration={200} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
+                                to="merchSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
                                     Merchandise
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} to="aboutUsSection" duration={200} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
+                                to="aboutUsSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
                                     Om oss
                             </StyledLink>
                             </li>
