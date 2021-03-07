@@ -54,32 +54,10 @@ const VisitUsContent = styled.div`
    }
 `;
 
-const BlurContainer = styled.div`
-   position: relative;
-`;
-
-const BlurContainerList = styled.div`
-    mix-blend-mode: multiply;
-    content: "";
-    background: rgba(0,0,0,.6);
-    position: absolute;
-    filter: blur(70px);
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    filter: blur(120px);
-`;
-
 const VisitUs = () => {
     return (
         <VisitUsWrapper id="visitUsSection">
             <VisitUsContent>
-                {/* //Ändra blureffekt
-                <BlurContainer />
-                <BlurContainerList /> */}
                 <h2>Besök oss</h2>
                 <span><p>{`
                     Södermalm \n`}</p>

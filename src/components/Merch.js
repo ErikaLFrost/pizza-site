@@ -37,13 +37,26 @@ const MerchTitle = styled.h2`
     z-index: 10;
     margin: 0;
     font-size: 60px;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
+    color: #f9e3e4;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
+`;
+
+const MerchText = styled.p`
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 125px);
+    z-index: 10;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
 `;
 
 const Merch = () => {
     return (
         <MerchWrapper id="merchSection">
             <MerchTitle>Merch</MerchTitle>
+            <MerchText>lapiccolanonna@gmail.com</MerchText>
             <Carousel 
                 responsive={responsive}
                 infinite={true}

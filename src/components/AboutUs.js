@@ -6,6 +6,8 @@ const AboutUsWrapper = styled.div`
     margin-top: -509px;
     padding: 18px 0;
     background-color: #f9e3e4;
+    border-radius: 5px;
+    
     h2 {
         margin: 0;
         font-size: 60px;
@@ -30,6 +32,7 @@ const AboutUsWrapper = styled.div`
 const AboutUsContent = styled.div`
     width: 100%;
     margin: 0 auto;
+
     @media(max-width: 1000px) {
         width: 80%;
     }

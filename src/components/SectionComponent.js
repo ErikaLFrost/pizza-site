@@ -3,19 +3,16 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div`
     grid-column: span ${props => props.span === '5' ? '5/13' : '6'};
-    /* Denna måste lösas */
     width: 100%;
     height: 0;
     margin-top: ${props => props.marginTop ? props.marginTop : '70px'} ;
     padding-top: ${props => props.imgProportion ? props.imgProportion : '99.5%'};
     position: relative;
-    border-radius: 5px;
 
     @media(max-width: 1000px) {
         grid-column: span 12;
         margin-top: 50px;
         display: ${props => props.hideOnMobile && 'none'};
-        border-radius: 0;
     }
 `;
 
@@ -33,12 +30,14 @@ const SectionContent = styled.div`
     justify-content: center;
     flex-direction: column;
     white-space: pre-line;
+    border-radius: 5px;
 
     h2 {
         margin: 0;
         padding-top: 20px;
         font-size: 60px;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
+        color: #f9e3e4;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
     }
 
     p {
@@ -54,32 +53,10 @@ const SectionContent = styled.div`
     }
 `;
 
-const BlurContainer = styled.div`
-   position: relative;
-`;
-
-const BlurContainerList = styled.div`
-    mix-blend-mode: multiply;
-    content: "";
-    background: rgba(0,0,0,.6);
-    position: absolute;
-    filter: blur(70px);
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    filter: blur(120px);
-`;
-
 const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile, id }) => {
     return (<>
         <SectionWrapper imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} hideOnMobile={hideOnMobile} id={id}>
             <SectionContent bgImage={bgImage} shading={shading}>
-                {/* //Ändra blureffekt
-                <BlurContainer />
-                <BlurContainerList /> */}
                 {/* Detta är istället för alt-tagg för bakgrundsbilden */}
                 <span className="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
                 <h2>{title}</h2>

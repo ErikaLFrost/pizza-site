@@ -1,13 +1,6 @@
 import aboutUsImg from '../images/baking.jpg';
-import SectionComponent from './SectionComponent';
 import styled from 'styled-components';
 
-
-// const AboutUs = () => {
-//     return (
-//         <SectionComponent title={aboutUsTitle} spanText={aboutUsSpan} bgImage={aboutUsImg} span={'6'} shading={true} id={'aboutUsSection'} textUnder={true} />
-//     )
-// }
 
 const SectionWrapper = styled.div`
     grid-column: span 6;
@@ -81,32 +74,10 @@ const SectionContent = styled.div`
     }
 `;
 
-const BlurContainer = styled.div`
-   position: relative;
-`;
-
-const BlurContainerList = styled.div`
-    mix-blend-mode: multiply;
-    content: "";
-    background: rgba(0,0,0,.6);
-    position: absolute;
-    filter: blur(70px);
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    filter: blur(120px);
-`;
-
 const AboutUs = () => {
     return (<>
         <SectionWrapper >
             <SectionContent>
-                {/* //Ändra blureffekt
-                <BlurContainer />
-                <BlurContainerList /> */}
                 {/* Detta är istället för alt-tagg för bakgrundsbilden */}
                 <span className="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
             </SectionContent>
