@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import styled, { keyframes } from 'styled-components';
 import { useTransition, animated } from 'react-spring'
@@ -97,12 +97,30 @@ const StyledLink = styled(Link)`
 
 const Navigation = () => {
     const [open, setOpen] = useState(false)
+    const [windowWidth, setWindowWidth] = useState();
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowWidth(window.innerWidth);
+        }
+
+        window.addEventListener("resize", handleResize);
+
+        handleResize();
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
 
     const navigationTransition = useTransition(open, null, {
-        config: { tension: 500, duration: 300, friction: 100 },
+        config: {
+            tension: 100,
+            duration: windowWidth > 1000 ? 200 : 80,
+            friction: windowWidth > 1000 ? 80 : 10
+        },
         from: { transform: 'translateX(30%)', opacity: 0 },
         enter: { transform: 'translateX(0%)', opacity: 1 },
-        leave: { transform: 'translateX(30%)', opacity: 0 },
+        leave: { transform: windowWidth > 1000 ? 'translateX(30%)' : 'translateX(15%)', opacity: 1 },
     })
 
     return (
