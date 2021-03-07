@@ -75,8 +75,8 @@ const BlurContainerList = styled.div`
 
 const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile, id }) => {
     return (<>
-        <SectionWrapper imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} shading={shading} hideOnMobile={hideOnMobile} id={id}>
-            <SectionContent bgImage={bgImage}>
+        <SectionWrapper imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} hideOnMobile={hideOnMobile} id={id}>
+            <SectionContent bgImage={bgImage} shading={shading}>
                 {/* //Ändra blureffekt
                 <BlurContainer />
                 <BlurContainerList /> */}

@@ -22,7 +22,7 @@ const AboutUsWrapper = styled.div`
     }
     @media(max-width: 1000px) {
         grid-column: span 12;
-        margin-top: 50px;
+        margin-top: 25px;
         background-color: transparent;
     }
 `;

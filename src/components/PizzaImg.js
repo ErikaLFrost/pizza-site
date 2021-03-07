@@ -1,4 +1,4 @@
-import pizzaImg from '../images/pizza-image.jpg';
+import pizzaImg from '../images/pizza-img.jpg';
 import SectionComponent from './SectionComponent';
 
 const PizzaImg = () => {
