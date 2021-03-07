@@ -33,7 +33,7 @@ const AboutUsContent = styled.div`
     @media(max-width: 1000px) {
         width: 80%;
     }
-    @media(max-width: 425px) {
+    @media(max-width: 650px) {
         width: 100%;
     }
 `;
