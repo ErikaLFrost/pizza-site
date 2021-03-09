@@ -3,6 +3,7 @@ import '../fonts/fonts';
 
 const MenuWrapper = styled.div`
     grid-column: span 6;
+    
     @media(max-width: 1000px) {
         grid-column: span 12;
     }
@@ -18,8 +19,14 @@ const MenuMenu = styled.div`
     position: relative;
     text-transform: uppercase;
     margin: 0 auto;
+
+    @media(min-width: 530px) {
+        max-width: 800px;
+    }
+
     @media(min-width: 1000px) {
         max-width: 800px;
+        width: calc(100% - 10px);
         margin: 0 0 0 5px;
     }
 
@@ -39,9 +46,8 @@ const MenuMenu = styled.div`
         text-align: center;
         font-size: 60px;
         filter: drop-shadow(0 0 0.5rem rgba(251, 205, 205, 0.5));
-        /* filter: drop-shadow(0px 0px 1px white); */
 
-        @media(min-width: 1000px) {
+        @media(min-width: 530px) {
             font-size: 80px;
             margin: 20px 0;
         }
@@ -52,6 +58,11 @@ const MenuMenu = styled.div`
         text-align: center;
         font-size: 20px;
         margin-bottom: 0;
+
+        @media(min-width: 530px) {
+            font-size: 26px;
+        }
+
         @media(min-width: 1000px) {
             font-size: 30px;   
         }
@@ -62,6 +73,11 @@ const MenuMenu = styled.div`
         margin: 0;
         padding: 0 10px;
         font-size: 11px;
+
+        @media(min-width: 530px) {
+            font-size: 13px;
+        }
+
         @media(min-width: 1000px) {
             font-size: 16px;   
         }
@@ -74,6 +90,7 @@ const MenuMenu = styled.div`
         margin: 26px 0 0;
         font-size: 16px;
         font-weight: 600;
+
         @media(min-width: 1000px) {
             font-size: 18px;  
     }

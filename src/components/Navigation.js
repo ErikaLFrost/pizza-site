@@ -42,9 +42,9 @@ const MenuOpen = styled(animated.div)`
     height: 100vh;
     background: #F29699;
     z-index: 1111;
-    border-left: 2px solid #f8e3e3;
-
+    
     @media(min-width: 1000px) {
+        border-left: 2px solid #f8e3e3;
         width: 500px;
     }
 
