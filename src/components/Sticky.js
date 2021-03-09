@@ -22,11 +22,6 @@ const StickyMenu = styled.div`
             color: black;
             text-decoration: none;
             transition: color ease-in-out 200ms;
-
-            &:hover {
-                color: white;
-                filter: drop-shadow(0px 0px 1px white);
-            }
         }
     }
 `;

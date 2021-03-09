@@ -16,12 +16,17 @@ const flicker = keyframes`
 `;
 
 const Bolt = styled.div`
-    position: absolute;
-    width: 100px;
-    height: auto;
-    bottom: -25vh;
-    left: ${props => props.left ? props.left : ''};
-    right: ${props => props.right ? props.right : ''};
+    display: none;
+
+    @media(min-width: 1000px) {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: auto;
+        bottom: -25vh;
+        left: ${props => props.left ? props.left : ''};
+        right: ${props => props.right ? props.right : ''};
+    }
 
     svg {
       transform: ${props => props.scale ? props.scale : 'scale(0,0)'};
