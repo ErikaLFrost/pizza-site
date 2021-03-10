@@ -1,6 +1,7 @@
 import aboutUsImg from '../images/baking.jpg';
 import styled from 'styled-components';
 
+const altText = `Juanita och Alessandra bakar pizza`;
 
 const SectionWrapper = styled.div`
     width: 100%;
@@ -52,6 +53,7 @@ const SectionContent = styled.div`
     justify-content: center;
     flex-direction: column;
     white-space: pre-line;
+    filter: contrast(110%) brightness(120%);
 
     h2 {
         margin: 0;
@@ -77,8 +79,7 @@ const AboutUs = () => {
     return (<>
         <SectionWrapper >
             <SectionContent>
-                {/* Detta är istället för alt-tagg för bakgrundsbilden */}
-                <span className="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
+                <span className="background-image" role="img" aria-label={altText}></span>
             </SectionContent>
         </SectionWrapper>
     </>

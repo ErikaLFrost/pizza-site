@@ -56,12 +56,12 @@ const SectionContent = styled.div`
     }
 `;
 
-const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile, id }) => {
+const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile, id, altText }) => {
     return (<>
         <SectionWrapper imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} hideOnMobile={hideOnMobile} id={id}>
             <SectionContent bgImage={bgImage} shading={shading}>
                 {/* Detta är istället för alt-tagg för bakgrundsbilden */}
-                <span className="background-image" role="img" aria-label="[Här får vi skicka in en prop]"></span>
+                <span className="background-image" role="img" aria-label={altText}></span>
                 <h2>{title}</h2>
                 <p>
                     {spanText}

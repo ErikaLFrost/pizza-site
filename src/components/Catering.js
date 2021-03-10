@@ -8,10 +8,12 @@ Avbokning senare än 48 timmar innan gig - tillkommer 2000 kr
 Utanför tullarna - tillkommer en kostnad på 1000 kr
 lapiccolanonna@gmail.com`;
 
+const altText = `Med pizzavagnen erbjuds catering`;
+
 
 const Catering = () => {
     return (
-        <SectionComponent title={cateringTitle} spanText={cateringSpan} bgImage={cateringImg} span={'6'} shading={true} id={'cateringSection'}/>
+        <SectionComponent title={cateringTitle} spanText={cateringSpan} bgImage={cateringImg} span={'6'} shading={true} id={'cateringSection'} altText={altText}/>
     )
 }
 
