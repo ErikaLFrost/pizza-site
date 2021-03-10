@@ -11,10 +11,11 @@ import Sticky from './components/Sticky';
 import CrewImg from './components/CrewImg';
 import Navigation from './components/Navigation';
 import PizzaImg from './components/PizzaImg';
+import Synthwave from './components/Synthwave';
 
 const MainWrapper = styled.div`
   position: relative;
-  background-color: #F29699;
+  /* background-color: #F29699; */
 `;
 
 const GridWrapper = styled.div`
@@ -43,6 +44,7 @@ function App() {
         <PizzaImg />
         <AboutUs />
       </GridWrapper>
+      <Synthwave />
       <Insta />
     </MainWrapper>
   );
