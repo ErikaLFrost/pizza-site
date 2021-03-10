@@ -13,19 +13,21 @@ const Logo = styled.div`
     width: 100%;
     height: 100%;
     position: relative;
-    /* Background blur for neon effect */
     filter: drop-shadow(0px 0px 1px white);
+
     svg {
         max-height: 100vh;
         filter: drop-shadow(0 0 0.5rem rgba(250, 0, 0, 0.76));
         position: absolute;
-        width: 50%;
+        width: 90%;
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @media(max-width: 768px) {
-            width: 90%;
+
+        @media(min-width: 760px) {
+            width: 60%;
         }
+
         @media(min-width: 1000px) {
             width: 40%;   
         }

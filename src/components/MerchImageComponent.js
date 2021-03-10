@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const MerchImage = styled.div`
-    grid-column: span 5;
+    grid-column: span 12;
     grid-column-end: 13;
     background: url(${props => props.bgImage && props.bgImage});
     background-size: cover;
@@ -11,8 +11,9 @@ const MerchImage = styled.div`
     height: 0;
     margin-top: 50px;
     padding-top: 116.5%;
-    @media(max-width: 1000px) {
-        grid-column: span 12;
+
+    @media(min-width: 1000px) {
+        grid-column: span 5;
     }
 `;
 

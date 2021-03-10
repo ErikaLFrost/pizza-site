@@ -13,7 +13,6 @@ const InstaWrapper = styled.div`
     justify-content: center;
     background-color: #f9e3e4;
     padding-bottom: 3rem;
-    /* max-width: 1200px; */
     margin: 0 auto;
 
     div {
@@ -57,15 +56,7 @@ const FollowUs = styled.h3`
 `;
 
 const StyledInstaFeed = styled(InstagramFeed)`
-    /* display: grid !important;
-    div{
-        display: grid !important;
-        grid-template-columns: repeat(12, [col-start] 1fr);
-        div{
-            display: grid !important;
-        grid-template-columns: repeat(12, [col-start] 1fr);
-        }
-    } */
+   
 `;
 
 const Insta = () => {

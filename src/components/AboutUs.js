@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
 const AboutUsWrapper = styled.div`
-    grid-column: span 5/13;
     text-align: center;
-    margin-top: -509px;
     padding: 18px 0;
-    background-color: #f9e3e4;
     border-radius: 5px;
+    grid-column: span 12;
+    margin-top: 25px;
+    background-color: transparent;
     
     h2 {
         margin: 0;
         font-size: 60px;
     }
+    
     p {
         color: black;
         text-align: center;
@@ -22,23 +23,17 @@ const AboutUsWrapper = styled.div`
         padding: 0 10px;
         font-weight: 600;
     }
-    @media(max-width: 1000px) {
-        grid-column: span 12;
-        margin-top: 25px;
-        background-color: transparent;
+
+    @media(min-width: 1000px) {
+        background-color: #f9e3e4;
+        margin-top: -509px;
+        grid-column: span 5/13;
     }
 `;
 
 const AboutUsContent = styled.div`
     width: 100%;
     margin: 0 auto;
-
-    @media(max-width: 1000px) {
-        width: 80%;
-    }
-    @media(max-width: 650px) {
-        width: 100%;
-    }
 `;
 
 const AboutUs = () => {
