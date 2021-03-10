@@ -2,17 +2,20 @@ import styled from 'styled-components';
 
 
 const SectionWrapper = styled.div`
-    grid-column: span ${props => props.span === '5' ? '5/13' : '6'};
+    grid-column: span 12;
     width: 100%;
     height: 0;
-    margin-top: ${props => props.marginTop ? props.marginTop : '70px'} ;
     padding-top: ${props => props.imgProportion ? props.imgProportion : '99.5%'};
     position: relative;
-
+    margin-top: 50px;
+    
     @media(max-width: 1000px) {
-        grid-column: span 12;
-        margin-top: 50px;
         display: ${props => props.hideOnMobile && 'none'};
+    }
+
+    @media(min-width: 1000px) {
+        grid-column: span ${props => props.span === '5' ? '5/13' : '6'};
+        margin-top: ${props => props.marginTop ? props.marginTop : '70px'} ;
     }
 `;
 

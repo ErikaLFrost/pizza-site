@@ -8,7 +8,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
-    /* Man kan göra fler breakpoints, men jag tycker 1 funkar bäst på stor och liten skärm */
     mobile: {
       breakpoint: { max: 4000, min: 0 },
       items: 1
@@ -16,17 +15,18 @@ const responsive = {
   };
 
 const MerchWrapper = styled.div`
-    grid-column: span 5;
+    grid-column: span 12;
     grid-column-end: 13;
     width: 100%;
     height: 0;
     margin-top: 40px;
     padding-top: 116.5%;
     position: relative;
-    margin-top: -356px;
-    @media(max-width: 1000px) {
-        grid-column: span 12;
-        margin-top: 29px;
+    margin-top: 29px;
+
+    @media(min-width: 1000px) {
+        grid-column: span 5/13;
+        margin-top: -356px;
     }
 `;
 

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import VisitUsImg from '../images/visit-us.jpg';
 
 const VisitUsWrapper = styled.div`
-    grid-column: span 5/ 13;
     background: 
     linear-gradient(
       rgba(251, 205, 205, 0.52), 
@@ -11,16 +10,17 @@ const VisitUsWrapper = styled.div`
     url(${VisitUsImg});
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: span 12;
+    margin-top: 50px;
     width: 100%;
     height: 0;
     padding-top: 99.5%;
     position: relative;
-    border-radius: 5px;
 
-    @media(max-width: 1000px) {
-        grid-column: span 12;
-        margin-top: 50px;
-        border-radius: 0;
+    @media(min-width: 1000px) {
+        grid-column: span 5/13;
+        margin-top: 0;
+        border-radius: 5px;
     }
 `;
 
@@ -34,14 +34,17 @@ const VisitUsContent = styled.div`
     justify-content: center;
     flex-direction: column;
     white-space: pre-line;
+
     h2{
         margin: 0;
         padding-top: 20px;
         font-size: 60px;
         text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
     }
+
     span{
         text-align: center;
+
         p{
             font-weight: 600;
             margin-top: 0;
