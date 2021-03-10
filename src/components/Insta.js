@@ -12,8 +12,9 @@ const InstaWrapper = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #f9e3e4;
-    padding-bottom: 3rem;
+    padding-bottom: 32px;
     margin: 0 auto;
+    padding-top: 10px;
 
     div {
         padding: .1rem;

@@ -20,7 +20,7 @@ const Logo = styled.div`
         filter: drop-shadow(0 0 0.5rem rgba(250, 0, 0, 0.76));
         position: absolute;
         width: 90%;
-        top: 45%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
 
@@ -62,11 +62,15 @@ const DownArrow = styled.p`
   position: absolute;
   color: #F29699;
   filter: drop-shadow(0px 0px 1px white);
-  bottom: 50px;
+  bottom: 100px;
   left: calc(50% - 12px);
   margin: 0;
   font-size: 42px;
   animation: ${flicker} 7s 2s alternate infinite;
+
+  @media(min-width: 1000px) {
+    bottom: 50px;
+  }
 `;
 
 const Hero = () => {
