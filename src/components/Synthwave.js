@@ -44,7 +44,7 @@ const Sun = styled.div`
     box-shadow: 0 0 10px 10px #f8e3e3;
     height: 500px;
     left: 50%;
-    bottom: 130px;
+    bottom: -130px;
     position: absolute;
     transform: translate(-50%, 40%);
     width: 500px;
