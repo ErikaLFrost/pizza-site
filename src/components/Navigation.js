@@ -17,6 +17,8 @@ const Hamburger = styled.button`
     border-left-color: green;
     border-right-color: red;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    
     :focus {
         outline: none;
     }

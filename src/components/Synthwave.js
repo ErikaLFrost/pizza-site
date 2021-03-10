@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled, { keyframes} from 'styled-components';
+
+const MoveUp = keyframes`
+    0% { background-position: 0 0; }
+	100% { background-position: 0 -100%; }
+    `;
 
 const SynthwaveContainer = styled.div`
     position: relative;
@@ -30,12 +35,28 @@ const Lines = styled.div`
     transform-origin: 50% 0;
     transform: rotateX(60deg);
     background-size: 42px 42px;
+    animation: ${MoveUp} 40s linear infinite;
+`;
+
+const Sun = styled.div`
+    background: linear-gradient(to bottom, yellow 0%, orange 50%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px #f8e3e3;
+    height: 500px;
+    left: 50%;
+    bottom: 130px;
+    position: absolute;
+    transform: translate(-50%, 40%);
+    width: 500px;
+    z-index: -1;
+    clip: rect(-20px,500px,150px,0px);
 `;
 
 const Synthwave = () => {
     return (<>
         <SynthwaveContainer>
             <Horizon>
+                <Sun />
                 <Lines />
             </Horizon>
         </SynthwaveContainer>
