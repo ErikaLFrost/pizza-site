@@ -18,7 +18,17 @@ const flicker = keyframes`
 const Bolt = styled.div`
     display: none;
 
-    @media(min-width: 1000px) {
+    @media(min-width: 1360px) {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: auto;
+        bottom: -25vh;
+        left: ${props => props.left ? '0px' : ''};
+        right: ${props => props.right ? '0px' : ''};
+    }
+
+    @media(min-width: 1530px) {
         display: block;
         position: absolute;
         width: 100px;
