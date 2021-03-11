@@ -4,10 +4,18 @@ import VisitUsImg from '../images/visit-us.jpg';
 const VisitUsWrapper = styled.div`
     background: 
     linear-gradient(
-      rgba(251, 205, 205, 0.52), 
-      rgba(251, 205, 205, 0.52)
+      rgba(251, 205, 205, 0.5), 
+      rgba(251, 205, 205, 0.5)
     ),
     url(${VisitUsImg});
+
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(${VisitUsImg});
+
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: span 12;
@@ -35,23 +43,35 @@ const VisitUsContent = styled.div`
     flex-direction: column;
     white-space: pre-line;
 
-    h2{
+    h2 {
         margin: 0;
-        padding-top: 20px;
         font-size: 60px;
+        padding-top: 20px;
         text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
+
+        color: #f9e3e4;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
+
+        @media(min-width: 1100px) {
+            position: absolute;
+            top: 50px;
+            padding-top: 0;
+        }
     }
 
-    span{
+    span {
         text-align: center;
 
-        p{
+        p {
             font-weight: 600;
             margin-top: 0;
             margin-bottom: .5rem;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
             text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
+
+            color: white;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
             
         }
    }

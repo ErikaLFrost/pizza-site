@@ -20,8 +20,7 @@ const SectionWrapper = styled.div`
 `;
 
 const SectionContent = styled.div`
-    background: ${props => props.shading && 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))'};
-    background-image: url(${props => props.bgImage && props.bgImage});
+    background-image: ${props => props.noFilter === true ? 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))' : 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))' }, url(${props => props.bgImage && props.bgImage});
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -41,6 +40,12 @@ const SectionContent = styled.div`
         font-size: 60px;
         color: #f9e3e4;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
+
+        @media(min-width: 1100px) {
+            position: absolute;
+            top: 50px;
+            padding-top: 0;
+        }
     }
 
     p {
@@ -49,17 +54,21 @@ const SectionContent = styled.div`
         line-height: 1.6;
         margin-top: 0;
         margin-bottom: .5rem;
-        font-size: 1em;
+        font-size: 1rem;
         padding: 0 10px;
         font-weight: 600;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
+
+        @media(min-width: 730px) {
+            padding: 0 50px;
+        }
     }
 `;
 
-const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile, id, altText }) => {
+const SectionComponent = ({ title, spanText, bgImage, imgProportion, span, marginTop, paddingTop, shading, hideOnMobile, id, altText, noFilter }) => {
     return (<>
         <SectionWrapper imgProportion={imgProportion} span={span} marginTop={marginTop} paddingTop={paddingTop} hideOnMobile={hideOnMobile} id={id}>
-            <SectionContent bgImage={bgImage} shading={shading}>
+            <SectionContent bgImage={bgImage} shading={shading} noFilter={noFilter}>
                 {/* Detta är istället för alt-tagg för bakgrundsbilden */}
                 <span className="background-image" role="img" aria-label={altText}></span>
                 <h2>{title}</h2>

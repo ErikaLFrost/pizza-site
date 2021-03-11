@@ -32,7 +32,7 @@ const MerchWrapper = styled.div`
 
 const MerchTitle = styled.h2`
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: calc(50% - 65px);
     z-index: 10;
     margin: 0;
@@ -64,10 +64,10 @@ const Merch = () => {
                 itemClass="carousel-item-padding-40-px"
                 showDots
             >
+                <MerchImageComponent merchImage={MerchImg4} />
                 <MerchImageComponent merchImage={MerchImg} />
                 <MerchImageComponent merchImage={MerchImg2} />
                 <MerchImageComponent merchImage={MerchImg3} />
-                <MerchImageComponent merchImage={MerchImg4} />
             </Carousel>
         </MerchWrapper>
     )
