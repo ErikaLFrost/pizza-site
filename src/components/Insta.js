@@ -61,12 +61,13 @@ const StyledInstaFeed = styled(InstagramFeed)`
 `;
 
 const Insta = () => {
+    console.log(process.env.REACT_APP_API_TOKEN)
     return (
         <InstaWrapper>
             <FollowUs>
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer" title="Link to Instagram">@piccolanonna</a>{"\n"}
             </FollowUs>
-                <StyledInstaFeed token={token} counter="6" />
+                <StyledInstaFeed token={process.env.REACT_APP_API_TOKEN} counter="6" />
         </InstaWrapper>)
 }
 
