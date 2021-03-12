@@ -41,14 +41,14 @@ const AboutUs = () => {
         <AboutUsWrapper id="aboutUsSection">
             <AboutUsContent>
                 <h2>Om oss</h2>
-                <p>
+                <div>
                     <p>{`Vi är tre vänner som bakar neapolitansk-inspirerad vegansk/vegetarisk pizza ut av högsta kvalitet & utan genvägar. \n`}</p>
                     <p>{`Det började med att vi genom vurmandet för god vegansk/vegetarisk mat, & gemensamt pizzanörderi valde att starta upp ett företag. \n`}</p>
                     <p>{`Från början åkte vi runt och krängde pizza med hjälp av en cykelvagn som sedan utvecklades till en moped-bil och nu har vi äntligen flyttat in i en lokal! \n`}</p>
                     <p>{`Det har varit otroligt nervöst men minst lika kul att äntligen ha fått öppna. Vi är så stolta över att kunna leverera en riktigt god vegansk och vegetarisk pizza i Stockholm till ett rimligt pris.\n`}</p>
                     <p>{`Kom gärna förbi oss och smaka. \n`}</p>
                     <p>{`Varma hälsningar från gänget på Nonna!`}</p>
-                </p>
+                </div>
             </AboutUsContent>
         </AboutUsWrapper>
     )
