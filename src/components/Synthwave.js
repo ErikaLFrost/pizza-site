@@ -26,7 +26,7 @@ const Horizon = styled.div`
 `;
 
 const Lines = styled.div`
-    height: 100vh;
+    height: 210px;
     left: 0;
     position: absolute;
     top: 0;
@@ -35,7 +35,7 @@ const Lines = styled.div`
     transform-origin: 50% 0;
     transform: rotateX(60deg);
     background-size: 42px 42px;
-    animation: ${MoveUp} 40s linear infinite;
+    animation: ${MoveUp} 15s linear infinite;
 `;
 
 const Sun = styled.div`
