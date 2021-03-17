@@ -15,10 +15,4 @@ const FlickerAnimation = keyframes`
   to    { opacity: 1; }
 `;
 
-const Flicker = () => {
-    return (
-        <FlickerAnimation />
-    )
-} 
-
-export default Flicker;
+export default FlickerAnimation;

@@ -1,19 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-
-const flicker = keyframes`
-  from  { opacity: 0; }
-  0%    { opacity: 1; }
-  3%    { opacity: 0.4; }
-  6%    { opacity: 1; }
-  7%    { opacity: 0.4; }
-  8%    { opacity: 1; }
-  9%    { opacity: 0.4; }
-  10%   { opacity: 1; }
-  89%   { opacity: 1; }
-  90%   { opacity: 0.4; }
-  100%  { opacity: 0.4; }
-  to    { opacity: 1; }
-`;
+import styled from 'styled-components';
+import FlickerAnimation from './Flicker';
 
 const Bolt = styled.div`
     /* Bolts hidden on small screen */
@@ -43,7 +29,7 @@ const Bolt = styled.div`
 
     svg {
       transform: ${props => props.scale ? props.scale : 'scale(0,0)'};
-      animation: ${flicker} ${props => props.seconds ? props.seconds : '4s'} linear infinite;
+      animation: ${FlickerAnimation} ${props => props.seconds ? props.seconds : '4s'} linear infinite;
       filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.76));
 
       g {

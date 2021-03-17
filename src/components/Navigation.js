@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import styled, { keyframes } from 'styled-components';
-import { useTransition, animated } from 'react-spring'
+import { useTransition, animated } from 'react-spring';
+import FlickerAnimation from './Flicker';
+import useWindowWidth from '../utils/useWindowWidth';
 
 const Hamburger = styled.button`
     position: fixed;
@@ -68,21 +70,6 @@ const MenuOpen = styled(animated.div)`
     }
 `;
 
-const flicker = keyframes`
-  from  { opacity: 0; }
-  0%    { opacity: 1; }
-  3%    { opacity: 0.4; }
-  6%    { opacity: 1; }
-  7%    { opacity: 0.4; }
-  8%    { opacity: 1; }
-  9%    { opacity: 0.4; }
-  10%   { opacity: 1; }
-  89%   { opacity: 1; }
-  90%   { opacity: 0.4; }
-  100%  { opacity: 0.4; }
-  to    { opacity: 1; }
-`;
-
 const StyledLink = styled(Link)`
         color: white;
         text-decoration: none;
@@ -90,7 +77,7 @@ const StyledLink = styled(Link)`
         cursor: pointer;
         
         :hover{
-            animation: ${flicker} 5s linear infinite;
+            animation: ${FlickerAnimation} 5s linear infinite;
             filter: drop-shadow(0 0 0.5rem rgba(243, 180, 182, 0.76));
             text-decoration: underline;
         }
@@ -99,20 +86,7 @@ const StyledLink = styled(Link)`
 
 const Navigation = () => {
     const [open, setOpen] = useState(false)
-    const [windowWidth, setWindowWidth] = useState();
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowWidth(window.innerWidth);
-        }
-
-        window.addEventListener("resize", handleResize);
-
-        handleResize();
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
+    const windowWidth = useWindowWidth()
 
     const navigationTransition = useTransition(open, null, {
         config: {
@@ -139,38 +113,38 @@ const Navigation = () => {
                     <MenuOpen style={props} key={key}>
                         <ul>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
-                                to="topSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)}
+                                    to="topSection" duration={windowWidth > 1000 ? 200 : 0} smooth={true}>
                                     Top
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
-                                to="menuSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)}
+                                    to="menuSection" duration={windowWidth > 1000 ? 200 : 0} smooth={true}>
                                     Meny
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
-                                to="visitUsSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)}
+                                    to="visitUsSection" duration={windowWidth > 1000 ? 200 : 0} smooth={true}>
                                     Öppettider
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
-                                to="cateringSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)}
+                                    to="cateringSection" duration={windowWidth > 1000 ? 200 : 0} smooth={true}>
                                     Catering
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
-                                to="merchSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)}
+                                    to="merchSection" duration={windowWidth > 1000 ? 200 : 0} smooth={true}>
                                     Merchandise
                             </StyledLink>
                             </li>
                             <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)} 
-                                to="aboutUsSection" duration={windowWidth > 1000 ? 200: 0} smooth={true}>
+                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)}
+                                    to="aboutUsSection" duration={windowWidth > 1000 ? 200 : 0} smooth={true}>
                                     Om oss
                             </StyledLink>
                             </li>

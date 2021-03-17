@@ -64,7 +64,7 @@ const Insta = () => {
             <FollowUs>
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer" title="Link to Instagram">@piccolanonna</a>{"\n"}
             </FollowUs>
-                <StyledInstaFeed token={process.env.REACT_APP_API_TOKEN} counter="6" />
+            <StyledInstaFeed token={process.env.REACT_APP_API_TOKEN} counter="6" />
         </InstaWrapper>)
 }
 
