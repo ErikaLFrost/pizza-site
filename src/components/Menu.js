@@ -10,7 +10,6 @@ const MenuWrapper = styled.div`
 `;
 
 const MenuMenu = styled.div`
-    background-color: #F29699;
     width: calc(100% - 20px);
     max-width: 500px;
     padding-bottom: 50px;

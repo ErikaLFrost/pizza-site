@@ -17,6 +17,8 @@ const Hamburger = styled.button`
     border-left-color: green;
     border-right-color: red;
     cursor: pointer;
+    
+    /* Removes blue outline on click for mobile */
     -webkit-tap-highlight-color: transparent;
     
     :focus {
@@ -89,8 +91,6 @@ const StyledLink = styled(Link)`
         
         :hover{
             animation: ${flicker} 5s linear infinite;
-            color: #e66879;
-            color: white;
             filter: drop-shadow(0 0 0.5rem rgba(243, 180, 182, 0.76));
             text-decoration: underline;
         }
