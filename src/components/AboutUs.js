@@ -14,7 +14,6 @@ const AboutUsWrapper = styled.div`
     }
     
     p {
-        color: black;
         text-align: center;
         line-height: 1.6;
         margin-top: 0;

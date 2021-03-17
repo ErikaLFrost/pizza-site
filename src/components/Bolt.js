@@ -16,8 +16,10 @@ const flicker = keyframes`
 `;
 
 const Bolt = styled.div`
+    /* Bolts hidden on small screen */
     display: none;
 
+    /* Bolt for medium screen */
     @media(min-width: 1360px) {
         display: block;
         position: absolute;
@@ -28,6 +30,7 @@ const Bolt = styled.div`
         right: ${props => props.right ? '0px' : ''};
     }
 
+    /* Bolt for desktop */
     @media(min-width: 1530px) {
         display: block;
         position: absolute;

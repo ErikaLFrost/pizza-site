@@ -13,25 +13,6 @@ const SectionWrapper = styled.div`
     display: ${props => props.hideOnMobile && 'none'};
     border-radius: 0;
 
-    h2 {
-        margin: 0;
-        padding-top: 20px;
-        font-size: 60px;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
-    }
-
-    p {
-        color: white;
-        text-align: center;
-        line-height: 1.6;
-        margin-top: 0;
-        margin-bottom: .5rem;
-        font-size: 1em;
-        padding: 0 10px;
-        font-weight: 600;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
-    }
-
     @media(min-width: 1000px) {
         border-radius: 5px;
         grid-column: span 6;
@@ -54,25 +35,6 @@ const SectionContent = styled.div`
     flex-direction: column;
     white-space: pre-line;
     filter: contrast(110%) brightness(120%);
-
-    h2 {
-        margin: 0;
-        padding-top: 20px;
-        font-size: 60px;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.7);
-    }
-
-    p {
-        color: white;
-        text-align: center;
-        line-height: 1.6;
-        margin-top: 0;
-        margin-bottom: .5rem;
-        font-size: 1em;
-        padding: 0 10px;
-        font-weight: 600;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
-    }
 `;
 
 const AboutUs = () => {
