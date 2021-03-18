@@ -12,11 +12,7 @@ const useInstaAPI = (apiToken) => {
             })
             .then(data => {
                 if (data.hasOwnProperty('error')) {
-                    //console.log('Success:', data);
-                    this.setState({
-                        isLoaded: true,
-                        isError: true,
-                    });
+                    console.log('error');
 
                 } else {
                     setInstaFeed(data.data);
@@ -24,11 +20,6 @@ const useInstaAPI = (apiToken) => {
             })
             .catch((error) => {
                 console.error('Error:', error);
-                this.setState({
-                    isLoaded: true,
-                    isError: true,
-                    error
-                });
             });
     }, [apiToken]);
     return instaFeed
