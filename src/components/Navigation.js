@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-scroll';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { useTransition, animated } from 'react-spring';
 import FlickerAnimation from './Flicker';
 import useWindowWidth from '../utils/useWindowWidth';

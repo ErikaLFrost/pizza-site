@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import '../fonts/fonts';
-import InstagramFeed from 'react-ig-feed'
-import 'react-ig-feed/dist/index.css'
-
-/* Se index.css för mer styling */
+import useInstaAPI from '../utils/useInstaAPI';
 
 const InstaWrapper = styled.div`
     grid-column: span 12;
@@ -13,13 +10,6 @@ const InstaWrapper = styled.div`
     padding-bottom: 32px;
     margin: 0 auto;
     padding-top: 10px;
-
-    div {
-        padding: .1rem;
-        @media(max-width: 1000px) {
-            grid-column: span 4;
-        }
-    }
 
     a {
         color: black;
@@ -54,17 +44,53 @@ const FollowUs = styled.h3`
     }
 `;
 
-const StyledInstaFeed = styled(InstagramFeed)`
-   
+const InstaGridWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr); 
+    grid-gap: .5rem;
+    margin-bottom: 1rem;
+    div{
+        grid-column: span 2;
+        position: relative;
+        ::before{
+            content: "";
+            padding-bottom: 100%;
+            display: block;
+        }
+        :hover{
+            opacity: 0.5;
+        }
+        @media (max-width: 1000px){
+            grid-column: span 4;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 `;
 
 const Insta = () => {
+    const instaFeed = useInstaAPI(process.env.REACT_APP_API_TOKEN)
     return (
         <InstaWrapper>
             <FollowUs>
                 <a href="https://www.instagram.com/lapiccolanonnapizza" target="_blank" rel="noreferrer" title="Link to Instagram">@piccolanonna</a>{"\n"}
             </FollowUs>
-            <StyledInstaFeed token={process.env.REACT_APP_API_TOKEN} counter="6" />
+            <InstaGridWrapper>
+                {instaFeed && instaFeed.slice(0, 6).map((instaObject, i) =>
+                    <div key={i}>
+                        <a href={instaObject.permalink} target="_blank" rel="noreferrer">
+                        <img src={instaObject.media_type === 'VIDEO' ? instaObject.thumbnail_url : instaObject.media_url} alt="" />
+                        </a>
+                    </div>
+                )}
+            </InstaGridWrapper>
+            {/* <StyledInstaFeed token={process.env.REACT_APP_API_TOKEN} counter="6" /> */}
+
         </InstaWrapper>)
 }
 

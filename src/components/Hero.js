@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import BoltImg from './Bolt';
 import FlickerAnimation from './Flicker'
 
