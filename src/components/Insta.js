@@ -49,6 +49,7 @@ const InstaGridWrapper = styled.div`
     grid-template-columns: repeat(12, [col-start] 1fr); 
     grid-gap: .5rem;
     margin-bottom: 1rem;
+    padding: 0 .5rem;
     div{
         grid-column: span 2;
         position: relative;
