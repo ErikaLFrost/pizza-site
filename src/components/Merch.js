@@ -42,21 +42,34 @@ const MerchTitle = styled.h2`
 `;
 
 const MerchText = styled.p`
+    text-align: center;
     position: absolute;
     bottom: 40px;
-    left: calc(50% - 125px);
+    left: 0;
     z-index: 10;
     margin: 0;
     font-size: 20px;
     color: white;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.7);
+
+    :before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 20px);
+        z-index: -1;
+        opacity: 0.5;
+        backdrop-filter: blur(30px);
+    }
 `;
 
 const Merch = () => {
     return (
         <MerchWrapper id="merchSection">
             <MerchTitle>Merch</MerchTitle>
-            <MerchText>lapiccolanonna@gmail.com</MerchText>
+            <MerchText>{`Vi trycker och säljer våra egna t-shirts också! Tröjorna finns i vit & svart, men finns många färger på trycket man kan välja på. \n Maila oss vid intresse: lapiccolanonna@gmail.com`}</MerchText>
             <Carousel 
                 responsive={responsive}
                 infinite={true}
