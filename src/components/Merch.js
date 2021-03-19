@@ -69,7 +69,7 @@ const Merch = () => {
     return (
         <MerchWrapper id="merchSection">
             <MerchTitle>Merch</MerchTitle>
-            <MerchText>{`Vi trycker och säljer våra egna t-shirts också! Tröjorna finns i vit & svart, men finns många färger på trycket man kan välja på. \n Maila oss vid intresse: lapiccolanonna@gmail.com`}</MerchText>
+            <MerchText>{`Vi trycker och säljer våra egna t-shirts också! Tröjorna finns i vit & svart och många olika färger på trycket att välja på. \n Maila oss vid intresse: lapiccolanonna@gmail.com`}</MerchText>
             <Carousel 
                 responsive={responsive}
                 infinite={true}
