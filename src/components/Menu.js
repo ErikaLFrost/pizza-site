@@ -33,7 +33,7 @@ const MenuMenu = styled.div`
     &:before { 
         content: " ";
         position: absolute;
-        z-index: 1;
+        z-index: -1;
         top: -6px;
         left: -6px;
         width: calc(100% + 8px);
