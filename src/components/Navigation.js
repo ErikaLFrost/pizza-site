@@ -77,7 +77,7 @@ const StyledLink = styled(Link)`
         cursor: pointer;
         
         :hover{
-            animation: ${FlickerAnimation} 5s linear infinite;
+            animation: ${FlickerAnimation} 5s linear 1;
             filter: drop-shadow(0 0 0.5rem rgba(243, 180, 182, 0.76));
             text-decoration: underline;
         }
