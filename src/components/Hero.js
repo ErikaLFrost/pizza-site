@@ -38,10 +38,10 @@ const Logo = styled.div`
 
 const NonnaLogo = styled.g`
   .flicker1 {
-    animation: ${FlickerAnimation} 5s linear infinite;
+    animation: ${FlickerAnimation} 5s linear 3;
   }
   .flicker2 {
-    animation: ${FlickerAnimation} 6s linear 3s infinite;
+    animation: ${FlickerAnimation} 6s linear 1s 3;
   }
 `;
 

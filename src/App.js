@@ -12,6 +12,7 @@ import CrewImg from './components/CrewImg';
 import Navigation from './components/Navigation';
 import PizzaImg from './components/PizzaImg';
 import Synthwave from './components/Synthwave';
+import PreviewImage from './components/PreviewImage';
 
 const MainWrapper = styled.div`
   position: relative;
@@ -35,6 +36,7 @@ function App() {
       <Sticky />
       <GlobalFonts />
       <Hero />
+      <PreviewImage />
       <GridWrapper>
         <Menu />
         <VisitUs />
