@@ -114,12 +114,6 @@ const Navigation = () => {
                         <ul>
                             <li>
                                 <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)}
-                                    to="topSection" duration={windowWidth > 1000 ? 200 : 0} smooth={true}>
-                                    Top
-                            </StyledLink>
-                            </li>
-                            <li>
-                                <StyledLink activeClass="active" spy={true} onClick={() => setOpen(open ? false : true)}
                                     to="menuSection" duration={windowWidth > 1000 ? 200 : 0} smooth={true}>
                                     Meny
                             </StyledLink>
