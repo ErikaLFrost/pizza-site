@@ -83,9 +83,9 @@ const VisitUs = () => {
                 </span>
                 <span><p>{`
                     Öppet \n `}</p>
-                    <p>{`Fre 13-20 \n `}</p>
-                    <p>{`Lör 12-20 \n `}</p>
-                    <p>{`Sön 12-20`}</p>
+                    <p>{`Fre 12-19 \n `}</p>
+                    <p>{`Lör 12-19 \n `}</p>
+                    <p>{`Sön 12-19`}</p>
                 </span>
             </VisitUsContent>
         </VisitUsWrapper >
