@@ -1,23 +1,26 @@
-@media(min-width: 1000px) {
-    html {
+@media (min-width: 1000px) {
+  html {
     scroll-behavior: smooth;
   }
 }
 
 html {
-  background-color: #F29699;
+  background-color: #f29699;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 /* Merch Carousel */
@@ -31,7 +34,7 @@ code {
 }
 
 .react-multiple-carousel__arrow {
-  background: #F29699 !important;
+  background: #f29699 !important;
   transition: background 200ms !important;
 }
 
@@ -57,5 +60,5 @@ code {
 }
 
 .react-multi-carousel-dot--active button {
-  background: #F29699 !important;
+  background: #f29699 !important;
 }

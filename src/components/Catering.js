@@ -1,5 +1,5 @@
-import SectionComponent from './SectionComponent';
-import cateringImg from '../images/La-Piccola-Nonna-car.JPG';
+import SectionComponent from "./SectionComponent";
+import cateringImg from "../images/La-Piccola-Nonna-car.JPG";
 
 const cateringTitle = `Catering`;
 
@@ -10,11 +10,18 @@ lapiccolanonna@gmail.com`;
 
 const altText = `Med pizzavagnen erbjuds catering`;
 
-
 const Catering = () => {
-    return (
-        <SectionComponent title={cateringTitle} spanText={cateringSpan} bgImage={cateringImg} span={'6'} shading={true} id={'cateringSection'} altText={altText}/>
-    )
-}
+  return (
+    <SectionComponent
+      title={cateringTitle}
+      spanText={cateringSpan}
+      bgImage={cateringImg}
+      span={"6"}
+      shading={true}
+      id={"cateringSection"}
+      altText={altText}
+    />
+  );
+};
 
 export default Catering;
