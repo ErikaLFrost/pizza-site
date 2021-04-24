@@ -77,7 +77,7 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 
   :hover {
-    animation: ${FlickerAnimation} 5s linear infinite;
+    animation: ${FlickerAnimation} 5s linear 1;
     filter: drop-shadow(0 0 0.5rem rgba(243, 180, 182, 0.76));
     text-decoration: underline;
   }
@@ -118,18 +118,6 @@ const Navigation = () => {
           item && (
             <MenuOpen style={props} key={key}>
               <ul>
-                <li>
-                  <StyledLink
-                    activeClass="active"
-                    spy={true}
-                    onClick={() => setOpen(open ? false : true)}
-                    to="topSection"
-                    duration={windowWidth > 1000 ? 200 : 0}
-                    smooth={true}
-                  >
-                    Top
-                  </StyledLink>
-                </li>
                 <li>
                   <StyledLink
                     activeClass="active"
