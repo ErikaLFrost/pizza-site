@@ -64,6 +64,7 @@ const MenuMenu = styled.div`
 
     @media (min-width: 1000px) {
       font-size: 30px;
+      margin-top: 16px;
     }
   }
 
@@ -74,11 +75,11 @@ const MenuMenu = styled.div`
     font-size: 11px;
 
     @media (min-width: 530px) {
-      font-size: 13px;
+      font-size: 14px;
     }
 
     @media (min-width: 1000px) {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 
@@ -125,6 +126,14 @@ const Menu = () => {
         <p>
           (Bianca) Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron,
           Valnötter, Lönnsirap, Evo
+        </p>
+        <h2>Patata</h2>
+        <p>
+          Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto
+        </p>
+        <h2>Patata Vegan</h2>
+        <p>
+          Ifraiche, Rosmarin, Parveggio, Potatis, Tomatpesto
         </p>
         <span>Alla pizzor 85 kr</span>
       </MenuMenu>
