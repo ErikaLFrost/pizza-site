@@ -14,6 +14,7 @@ const DescriptionSpan = styled.span`
   z-index: -10;
   top: 0;
   left: 0;
+  opacity: 0;
 `;
 
 const MenuMenu = styled.div`
