@@ -13,6 +13,7 @@ import Navigation from "./components/Navigation";
 import PizzaImg from "./components/PizzaImg";
 import Synthwave from "./components/Synthwave";
 import PreviewImage from "./components/PreviewImage";
+import ClosedMenu from "./components/Closed";
 
 const MainWrapper = styled.div`
   position: relative;
@@ -33,6 +34,7 @@ function App() {
   return (
     <MainWrapper>
       <Navigation />
+      <ClosedMenu />
       <Sticky />
       <GlobalFonts />
       <Hero />
