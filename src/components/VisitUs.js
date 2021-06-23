@@ -68,6 +68,13 @@ const VisitUsContent = styled.div`
   }
 `;
 
+const Midsommar = styled.span`
+  p {
+    color: #89f189 !important;
+    margin-top: 10px !important;
+  }
+`;
+
 const VisitUs = () => {
   return (
     <VisitUsWrapper id="visitUsSection">
@@ -78,6 +85,11 @@ const VisitUs = () => {
                     Södermalm \n`}</p>
           <p>{`Vartoftagatan 49`}</p>
         </span>
+
+        <Midsommar>
+          <p>Stäng Midsommar: 25-26:e juni</p>
+        </Midsommar>
+
         <span>
           <p>{`
                     Öppet \n `}</p>
@@ -85,6 +97,7 @@ const VisitUs = () => {
           <p>{`Lör 12-19 \n `}</p>
           <p>{`Sön 12-19`}</p>
         </span>
+        
       </VisitUsContent>
     </VisitUsWrapper>
   );

@@ -9,13 +9,6 @@ const MenuWrapper = styled.div`
   }
 `;
 
-const DescriptionSpan = styled.span`
-  position: fixed;
-  z-index: -10;
-  top: 0;
-  left: 0;
-`;
-
 const MenuMenu = styled.div`
   width: calc(100% - 20px);
   max-width: 500px;
@@ -108,7 +101,6 @@ const Menu = () => {
   return (
     <MenuWrapper id="menuSection">
       <MenuMenu>
-        <DescriptionSpan>Vegansk och vegetarisk Napolitansk pizza på Södermalm</DescriptionSpan>
         <h1>Menu</h1>
         <h2>Marinara</h2>
         <p>San Marzanotomater, Vitlök, Oregano, Evo</p>
