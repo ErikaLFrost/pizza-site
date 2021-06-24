@@ -87,7 +87,7 @@ const VisitUs = () => {
         </span>
 
         <Midsommar>
-          <p>Stäng Midsommar: 25-26:e juni</p>
+          <p>Stängt Midsommar: 25-26:e juni</p>
         </Midsommar>
 
         <span>

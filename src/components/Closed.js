@@ -24,7 +24,7 @@ const Closed = () => {
   return (
     <ClosedMenu>
       <p>
-        Stängd Midsommar: 25-26:e juni
+        Stängt Midsommar: 25-26:e juni
       </p>
     </ClosedMenu>
   );
