@@ -68,7 +68,7 @@ const VisitUsContent = styled.div`
   }
 `;
 
-const Midsommar = styled.span`
+const Closed = styled.span`
   p {
     color: #89f189 !important;
     margin-top: 10px !important;
@@ -86,9 +86,9 @@ const VisitUs = () => {
           <p>{`Vartoftagatan 49`}</p>
         </span>
 
-        <Midsommar>
+        {/* <Closed>
           <p>Stängt Midsommar: 25-26:e juni</p>
-        </Midsommar>
+        </Closed> */}
 
         <span>
           <p>{`

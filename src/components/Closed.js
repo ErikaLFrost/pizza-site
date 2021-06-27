@@ -9,7 +9,7 @@ const ClosedMenu = styled.div`
   top: 0;
   left: 0;
   background-color: #f8e3e3;
-  z-index: 9001;
+  z-index: 8001;
   margin: 0;
 
   p {
