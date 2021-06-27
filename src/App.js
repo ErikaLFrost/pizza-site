@@ -34,7 +34,7 @@ function App() {
   return (
     <MainWrapper>
       <Navigation />
-      <ClosedMenu />
+      {/* <ClosedMenu /> */}
       <Sticky />
       <GlobalFonts />
       <Hero />
