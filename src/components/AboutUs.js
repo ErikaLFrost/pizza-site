@@ -27,6 +27,7 @@ const AboutUsWrapper = styled.div`
     background-color: #f9e3e4;
     margin-top: -509px;
     grid-column: span 5/13;
+    height: 472px;
   }
 `;
 

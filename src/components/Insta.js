@@ -9,7 +9,6 @@ const InstaWrapper = styled.div`
   background-color: #f9e3e4;
   padding-bottom: 32px;
   margin: 0 auto;
-  padding-top: 10px;
 
   a {
     color: black;
