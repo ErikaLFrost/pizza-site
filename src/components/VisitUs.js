@@ -92,10 +92,12 @@ const VisitUs = () => {
 
         <span>
           <p>{`
-                    Öppet \n `}</p>
+                    Öppet: \n `}</p>
+          {/* <p>{`Ons 12-19 \n `}</p>
+          <p>{`Tor 12-19 \n `}</p>
           <p>{`Fre 12-19 \n `}</p>
-          <p>{`Lör 12-19 \n `}</p>
-          <p>{`Sön 12-19`}</p>
+          <p>{`Lör 12-19 \n `}</p> */}
+          <p>{`Onsdag - Söndag 12-19`}</p>
         </span>
         
       </VisitUsContent>
