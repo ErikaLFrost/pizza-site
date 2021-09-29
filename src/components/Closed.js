@@ -3,10 +3,10 @@ import "../fonts/fonts";
 
 const ClosedMenu = styled.div`
   width: 100%;
-  height: 40px;
+  height: 80px;
   position: -webkit-sticky;
   position: fixed;
-  top: 0;
+  bottom: 40px;
   left: 0;
   background-color: #f8e3e3;
   z-index: 8001;
@@ -18,13 +18,17 @@ const ClosedMenu = styled.div`
     padding: 6px 0;
     font-size: 24px;
   }
+  @media (min-width: 1000px) {
+    height: 40px;
+    top: 0;
+  }
 `;
 
 const Closed = () => {
   return (
     <ClosedMenu>
       <p>
-        Stängt Midsommar: 25-26:e juni
+        Tillfälligt stängt från och med 2:a oktober pga flytt. Ses snart igen!
       </p>
     </ClosedMenu>
   );
