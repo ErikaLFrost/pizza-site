@@ -28,7 +28,7 @@ const Closed = () => {
   return (
     <ClosedMenu>
       <p>
-        Tillfälligt stängt från och med 2:a oktober pga flytt. Ses snart igen!
+        Öppet igen! Välkomna till Blekingegatan 36
       </p>
     </ClosedMenu>
   );

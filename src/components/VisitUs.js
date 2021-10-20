@@ -83,7 +83,7 @@ const VisitUs = () => {
         <span>
           <p>{`
                     Södermalm \n`}</p>
-          <p>{`Vartoftagatan 49`}</p>
+          <p>{`Blekingegatan 36`}</p>
         </span>
 
         {/* <Closed>
@@ -97,7 +97,7 @@ const VisitUs = () => {
           <p>{`Tor 12-19 \n `}</p>
           <p>{`Fre 12-19 \n `}</p>
           <p>{`Lör 12-19 \n `}</p> */}
-          <p>{`Onsdag - Söndag 12-19`}</p>
+          <p>{`Onsdag - Söndag 11-20`}</p>
         </span>
         
       </VisitUsContent>
