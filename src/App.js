@@ -2,6 +2,8 @@ import styled from "styled-components";
 import GlobalFonts from "./fonts/fonts";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
+import MenuNew from "./components/MenuNew";
+import MenuColor from "./components/MenuColor";
 import VisitUs from "./components/VisitUs";
 import Catering from "./components/Catering";
 import Merch from "./components/Merch";
@@ -11,6 +13,7 @@ import Sticky from "./components/Sticky";
 import CrewImg from "./components/CrewImg";
 import Navigation from "./components/Navigation";
 import PizzaImg from "./components/PizzaImg";
+import PizzaPizza from "./components/Pizzatext";
 import Synthwave from "./components/Synthwave";
 import PreviewImage from "./components/PreviewImage";
 import ClosedMenu from "./components/Closed";
@@ -23,6 +26,7 @@ const MainWrapper = styled.div`
 const GridWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
+  position: relative;
   margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -34,14 +38,15 @@ function App() {
   return (
     <MainWrapper>
       <Navigation />
-      <ClosedMenu />
+      {/* <ClosedMenu /> */}
       <Sticky />
       <GlobalFonts />
       <Hero />
       <PreviewImage />
       <GridWrapper>
-        <Menu />
+        <MenuNew />
         <VisitUs />
+        <PizzaPizza />
         <Catering />
         <Merch />
         <CrewImg />

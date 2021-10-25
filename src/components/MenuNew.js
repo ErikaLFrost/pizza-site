@@ -1,0 +1,166 @@
+import styled from "styled-components";
+import "../fonts/fonts";
+
+const MenuWrapper = styled.div`
+  grid-column: span 6;
+
+  @media (max-width: 1000px) {
+    grid-column: span 12;
+  }
+`;
+
+const MenuMenu = styled.div`
+  width: calc(100% - 20px);
+  max-width: 500px;
+  padding-bottom: 50px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  @media (min-width: 530px) {
+    max-width: 800px;
+  }
+
+  @media (min-width: 1000px) {
+    max-width: 800px;
+    width: calc(100% - 10px);
+    margin: 0 0 0 5px;
+  }
+
+  /* Second Border */
+  &:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: -6px;
+    left: -6px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    border: 2px solid black;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    filter: drop-shadow(0 0 0.5rem rgba(251, 205, 205, 0.5));
+
+    @media (min-width: 530px) {
+      font-size: 80px;
+      margin: 20px 0;
+    }
+  }
+
+  h2 {
+    font-family: "PlatonickFont";
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
+
+    @media (min-width: 530px) {
+      font-size: 26px;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 30px;
+      margin-top: 16px;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 11px;
+
+    @media (min-width: 530px) {
+      font-size: 14px;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 14px;
+    }
+  }
+
+  /* Alla Pizzor 85 kr */
+  span {
+    display: block;
+    text-align: center;
+    margin: 26px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+
+    @media (min-width: 1000px) {
+      font-size: 18px;
+    }
+  }
+`;
+
+const MenuNew = () => {
+  return (
+    <MenuWrapper id="menuSection">
+      <MenuMenu>
+        <h1>Menu</h1>
+        <h2>Marinara</h2>
+        <p>
+            San Marzanotomater, Vitlök, Oregano, Evo
+        </p>
+        <h2>Margherita</h2>
+        <p>
+            San Marzanotomater, Fior di Latte, Pecorino, Basilika, Evo
+        </p>
+        <h2>Margherita Vegan</h2>
+        <p>
+            San Marzanotomater, Greenvie-Mozzarella, Parveggio, Basilika, Evo
+        </p>
+        <h2>Nduja</h2>
+        <p>
+          San Marzanotomater, Fior di Latte, Veg Nduja, Pecorino, Basilika, Evo
+        </p>
+        <h2>Nduja Vegan</h2>
+        <p>
+          San Marzanotomater, Greenvie-Mozzarella, Veg Nduja, Parveggio, Basilika, Evo
+        </p>
+        <h2>Blue</h2>
+        <p>
+          (Bianca) Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
+          Honung, Evo
+        </p>
+        <h2>Blue Vegan</h2>
+        <p>
+          (Bianca) Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron,
+          Valnötter, Lönnsirap, Evo
+        </p>
+        <h2>Patata</h2>
+        <p>
+          Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto
+        </p>
+        <h2>Patata Vegan</h2>
+        <p>
+          Oatly Ifraiche, Rosmarin, Parveggio, Potatis, Tomatpesto
+        </p>
+        <h2>Jammin</h2>
+        <p>
+            San Marzanotomater, Pecorino, Fior di Latte, Seitan, Vitlök & Chilisylt, Basilika, Evo
+        </p>
+        <h2>Jammin Vegan</h2>
+        <p>
+            San Marzanotomater, Parveggio, Greenvie-Mozzarella, Seitan, Vitlök & Chilisylt, Basilika, Evo
+        </p>
+        <h2>Al Funghi</h2>
+        <p>
+            Créme Fraiche, Pecorino, Fior di Latte, Champinjoner, Persilja, Vitlöksolja
+        </p>
+        <h2>Al Funghi Vegan</h2>
+        <p>
+            Oatly Ifraiche, Parveggio, Greenvie-Mozzarella, Champinjoner, Persilja, Vitlöksolja 
+        </p>
+
+        <span>Alla pizzor 85 kr</span>
+      </MenuMenu>
+    </MenuWrapper>
+  );
+};
+
+export default MenuNew;
