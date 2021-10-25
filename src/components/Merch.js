@@ -79,8 +79,8 @@ const Merch = () => {
         itemClass="carousel-item-padding-40-px"
         showDots
       >
-        <MerchImageComponent merchImage={MerchImg4} />
         <MerchImageComponent merchImage={MerchImg} />
+        <MerchImageComponent merchImage={MerchImg4} />
         <MerchImageComponent merchImage={MerchImg2} />
         <MerchImageComponent merchImage={MerchImg3} />
       </Carousel>
