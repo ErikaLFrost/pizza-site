@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import GlobalFonts from "./fonts/fonts";
 import Hero from "./components/Hero";
-import Menu from "./components/Menu";
+/* import Menu from "./components/Menu";
+import MenuColor from "./components/MenuColor"; */
 import MenuNew from "./components/MenuNew";
-import MenuColor from "./components/MenuColor";
 import VisitUs from "./components/VisitUs";
 import Catering from "./components/Catering";
 import Merch from "./components/Merch";
@@ -16,7 +16,7 @@ import PizzaImg from "./components/PizzaImg";
 import PizzaPizza from "./components/Pizzatext";
 import Synthwave from "./components/Synthwave";
 import PreviewImage from "./components/PreviewImage";
-import ClosedMenu from "./components/Closed";
+/* import ClosedMenu from "./components/Closed"; */
 
 const MainWrapper = styled.div`
   position: relative;
