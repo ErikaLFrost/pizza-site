@@ -119,12 +119,12 @@ const Menu = () => {
         </p>
         <h2>Blue</h2>
         <p>
-          (Bianca) Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
+          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
           Honung, Evo
         </p>
         <h2>Blue Vegan</h2>
         <p>
-          (Bianca) Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron,
+          Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron,
           Valnötter, Lönnsirap, Evo
         </p>
         <h2>Patata</h2>

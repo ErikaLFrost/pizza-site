@@ -68,12 +68,12 @@ const VisitUsContent = styled.div`
   }
 `;
 
-const Closed = styled.span`
+/* const Closed = styled.span`
   p {
     color: #89f189 !important;
     margin-top: 10px !important;
   }
-`;
+`; */
 
 const VisitUs = () => {
   return (

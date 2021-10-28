@@ -124,12 +124,12 @@ const MenuNew = () => {
         </p>
         <h2>Blue</h2>
         <p>
-          (Bianca) Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
+          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
           Honung, Evo
         </p>
         <h2>Blue Vegan</h2>
         <p>
-          (Bianca) Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron,
+          Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron,
           Valnötter, Lönnsirap, Evo
         </p>
         <h2>Patata</h2>
@@ -146,7 +146,7 @@ const MenuNew = () => {
         </p>
         <h2>Jammin Vegan</h2>
         <p>
-            San Marzanotomater, Parveggio, Greenvie-Mozzarella, Seitan, Vitlök & Chilisylt, Basilika, Evo
+            San Marzanotomater, Greenvie-Mozzarella, Parveggio, Seitan, Vitlök & Chilisylt, Basilika, Evo
         </p>
         <h2>Al Funghi</h2>
         <p>
@@ -154,7 +154,7 @@ const MenuNew = () => {
         </p>
         <h2>Al Funghi Vegan</h2>
         <p>
-            Oatly Ifraiche, Parveggio, Greenvie-Mozzarella, Champinjoner, Persilja, Vitlöksolja 
+            Oatly Ifraiche, Greenvie-Mozzarella, Parveggio, Champinjoner, Persilja, Vitlöksolja 
         </p>
 
         <span>Alla pizzor 85 kr</span>
