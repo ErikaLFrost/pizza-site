@@ -97,8 +97,8 @@ const VisitUs = () => {
           <p>{`Tor 12-19 \n `}</p>
           <p>{`Fre 12-19 \n `}</p>
           <p>{`Lör 12-19 \n `}</p> */}
-          <p>{`Onsdag - Fredag 11-20`}</p>
-          <p>{`Lördag - Söndag 12-20`}</p>
+          <p>{`Onsdag - Söndag 12-20`}</p>
+          <p>{`( Eller tills degen tar slut )`}</p>
         </span>
         
       </VisitUsContent>
