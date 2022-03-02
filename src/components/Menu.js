@@ -83,7 +83,7 @@ const MenuMenu = styled.div`
     }
   }
 
-  /* Alla Pizzor 85 kr */
+  /* Alla Pizzor 95 kr */
   span {
     display: block;
     text-align: center;
@@ -119,23 +119,18 @@ const Menu = () => {
         </p>
         <h2>Blue</h2>
         <p>
-          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
-          Honung, Evo
+          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter, Honung, Evo
         </p>
         <h2>Blue Vegan</h2>
         <p>
-          Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron,
-          Valnötter, Lönnsirap, Evo
+          Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron, Valnötter,
+          Lönnsirap, Evo
         </p>
         <h2>Patata</h2>
-        <p>
-          Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto
-        </p>
+        <p>Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto</p>
         <h2>Patata Vegan</h2>
-        <p>
-          Ifraiche, Rosmarin, Parveggio, Potatis, Tomatpesto
-        </p>
-        <span>Alla pizzor 85 kr</span>
+        <p>Ifraiche, Rosmarin, Parveggio, Potatis, Tomatpesto</p>
+        <span>Alla pizzor 95 kr</span>
       </MenuMenu>
     </MenuWrapper>
   );

@@ -48,7 +48,7 @@ const MenuMenu = styled.div`
     text-transform: uppercase;
     font-size: 60px;
     filter: drop-shadow(0 0 0.5rem rgba(251, 205, 205, 0.5));
-    font-family: 'Rampart One', cursive;
+    font-family: "Rampart One", cursive;
 
     @media (min-width: 530px) {
       font-size: 80px;
@@ -57,7 +57,7 @@ const MenuMenu = styled.div`
   }
 
   h2 {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
@@ -89,7 +89,7 @@ const MenuMenu = styled.div`
     }
   }
 
-  /* Alla Pizzor 85 kr */
+  /* Alla Pizzor 95 kr */
   span {
     display: block;
     text-align: center;
@@ -115,9 +115,8 @@ const MenuMenu = styled.div`
     text-transform: uppercase;
 
     @media (min-width: 1000px) {
-        font-size: 20px;
-      }
-
+      font-size: 20px;
+    }
   }
 `;
 
@@ -126,44 +125,38 @@ const MenuColor = () => {
     <MenuWrapper id="menuSection">
       <MenuMenu>
         <h1>Menu</h1>
-        <span>Alla pizzor 85 kr</span>
+        <span>Alla pizzor 95 kr</span>
         <span>Välj mellan vegetariskt eller veganskt</span>
         <div>Le Rosse:</div>
-        <h2 style={{color: "red"}}>&#9658; Marinara &#9668;</h2>
-        <p>
-            San Marzanotomater, Vitlök, Oregano, Evo
-        </p>
-        <h2 style={{color: "pink"}}>&#9658; Margherita &#9668;</h2>
-        <p>
-            San Marzanotomater, Fior di Latte, Pecorino, Basilika, Evo
-        </p>
+        <h2 style={{ color: "red" }}>&#9658; Marinara &#9668;</h2>
+        <p>San Marzanotomater, Vitlök, Oregano, Evo</p>
+        <h2 style={{ color: "pink" }}>&#9658; Margherita &#9668;</h2>
+        <p>San Marzanotomater, Fior di Latte, Pecorino, Basilika, Evo</p>
 
-        <h2 style={{color: "orange"}}>&#9658; Nduja &#9668;</h2>
+        <h2 style={{ color: "orange" }}>&#9658; Nduja &#9668;</h2>
         <p>
           San Marzanotomater, Fior di Latte, Veg Nduja, Grönkål, Pecorino, Evo
         </p>
 
-        <h2 style={{color: "lightgreen"}}>&#9658; Jammin &#9668;</h2>
+        <h2 style={{ color: "lightgreen" }}>&#9658; Jammin &#9668;</h2>
         <p>
-            San Marzanotomater, Pecorino, Fior di Latte, Seitan, Vitlök & Chilisylt, Basilika, Evo
+          San Marzanotomater, Pecorino, Fior di Latte, Seitan, Vitlök &
+          Chilisylt, Basilika, Evo
         </p>
         <div>Le Bianche:</div>
-        <h2 style={{color: "red"}}>&#9658; Patata &#9668;</h2>
+        <h2 style={{ color: "red" }}>&#9658; Patata &#9668;</h2>
+        <p>Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto</p>
+
+        <h2 style={{ color: "pink" }}>&#9658; Al Funghi &#9668;</h2>
         <p>
-          Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto
+          Créme Fraiche, Pecorino, Fior di Latte, Champinjoner, Persilja,
+          Vitlöksolja
         </p>
 
-        <h2 style={{color: "pink"}}>&#9658; Al Funghi &#9668;</h2>
+        <h2 style={{ color: "aqua" }}>&#9658; Blue &#9668;</h2>
         <p>
-            Créme Fraiche, Pecorino, Fior di Latte, Champinjoner, Persilja, Vitlöksolja
+          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter, Honung, Evo
         </p>
-
-        <h2 style={{color: "aqua"}}>&#9658; Blue &#9668;</h2>
-        <p>
-          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
-          Honung, Evo
-        </p>
-
       </MenuMenu>
     </MenuWrapper>
   );
