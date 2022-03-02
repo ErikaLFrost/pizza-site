@@ -106,7 +106,11 @@ const Navigation = () => {
 
   return (
     <>
-      <Hamburger type="button" onClick={() => setOpen(open ? false : true)}>
+      <Hamburger
+        type="button"
+        aria-label="Open the menu"
+        onClick={() => setOpen(open ? false : true)}
+      >
         <HamburgerLinesContainer>
           <div></div>
           <div></div>
