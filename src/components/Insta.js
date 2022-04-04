@@ -99,13 +99,12 @@ const Insta = () => {
                       ? instaObject.thumbnail_url
                       : instaObject.media_url
                   }
-                  alt=""
+                  alt="Link to Instagram post"
                 />
               </a>
             </div>
           ))}
       </InstaGridWrapper>
-      {/* <StyledInstaFeed token={process.env.REACT_APP_API_TOKEN} counter="6" /> */}
     </InstaWrapper>
   );
 };

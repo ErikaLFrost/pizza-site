@@ -48,7 +48,7 @@ const MenuMenu = styled.div`
     text-transform: uppercase;
     font-size: 60px;
     filter: drop-shadow(0 0 0.5rem rgba(251, 205, 205, 0.5));
-    font-family: 'Rampart One', cursive;
+    font-family: "Rampart One", cursive;
 
     @media (min-width: 530px) {
       font-size: 80px;
@@ -57,7 +57,7 @@ const MenuMenu = styled.div`
   }
 
   h2 {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
@@ -89,7 +89,7 @@ const MenuMenu = styled.div`
     }
   }
 
-  /* Alla Pizzor 85 kr */
+  /* Alla Pizzor 95 kr */
   span {
     display: block;
     text-align: center;
@@ -115,9 +115,8 @@ const MenuMenu = styled.div`
     text-transform: uppercase;
 
     @media (min-width: 1000px) {
-        font-size: 20px;
-      }
-
+      font-size: 20px;
+    }
   }
 `;
 
@@ -137,12 +136,10 @@ const MenuColor = () => {
         <p>
           San Marzanotomater, Fior di Latte, Pecorino, Basilika, Olivolja
         </p>
-
         <h2 style={{color: "orange"}}>{/* &#9658; */} Nduja {/* &#9668; */}</h2>
         <p>
           San Marzanotomater, Fior di Latte, Pecorino, Veg Nduja, Basilika, Olivolja
         </p>
-
         <h2 style={{color: "lightgreen"}}>{/* &#9658; */} Jammin {/* &#9668; */}</h2>
         <p>
           San Marzanotomater, Fior di Latte, Pecorino, Seitan, Vitlök & Chilisylt, Basilika, Olivolja
@@ -163,7 +160,6 @@ const MenuColor = () => {
           Créme Fraiche, Pecorino, Fior di Latte, Gorgonzola, Päron, Valnötter,
           Honung, Olivolja
         </p>
-
       </MenuMenu>
     </MenuWrapper>
   );

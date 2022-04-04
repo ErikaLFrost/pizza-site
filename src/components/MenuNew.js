@@ -83,7 +83,7 @@ const MenuMenu = styled.div`
     }
   }
 
-  /* Alla Pizzor 85 kr */
+  /* Alla Pizzor 95 kr */
   span {
     display: block;
     text-align: center;
@@ -103,61 +103,55 @@ const MenuNew = () => {
       <MenuMenu>
         <h1>Menu</h1>
         <h2>Marinara</h2>
-        <p>
-            San Marzanotomater, Vitlök, Oregano, Evo
-        </p>
+        <p>San Marzanotomater, Vitlök, Oregano, Evo</p>
         <h2>Margherita</h2>
-        <p>
-            San Marzanotomater, Fior di Latte, Pecorino, Basilika, Evo
-        </p>
+        <p>San Marzanotomater, Fior di Latte, Pecorino, Basilika, Evo</p>
         <h2>Margherita Vegan</h2>
-        <p>
-            San Marzanotomater, Greenvie-Mozzarella, Parveggio, Basilika, Evo
-        </p>
+        <p>San Marzanotomater, Greenvie-Mozzarella, Parveggio, Basilika, Evo</p>
         <h2>Nduja</h2>
         <p>
           San Marzanotomater, Fior di Latte, Veg Nduja, Pecorino, Basilika, Evo
         </p>
         <h2>Nduja Vegan</h2>
         <p>
-          San Marzanotomater, Greenvie-Mozzarella, Veg Nduja, Parveggio, Basilika, Evo
+          San Marzanotomater, Greenvie-Mozzarella, Veg Nduja, Parveggio,
+          Basilika, Evo
         </p>
         <h2>Blue</h2>
         <p>
-          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
-          Honung, Evo
+          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter, Honung, Evo
         </p>
         <h2>Blue Vegan</h2>
         <p>
-          Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron,
-          Valnötter, Lönnsirap, Evo
+          Greenvie-Mozzarella, Parveggio, Greenvie-Blue, Päron, Valnötter,
+          Lönnsirap, Evo
         </p>
         <h2>Patata</h2>
-        <p>
-          Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto
-        </p>
+        <p>Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto</p>
         <h2>Patata Vegan</h2>
-        <p>
-          Oatly Ifraiche, Rosmarin, Parveggio, Potatis, Tomatpesto
-        </p>
+        <p>Oatly Ifraiche, Rosmarin, Parveggio, Potatis, Tomatpesto</p>
         <h2>Jammin</h2>
         <p>
-            San Marzanotomater, Pecorino, Fior di Latte, Seitan, Vitlök & Chilisylt, Basilika, Evo
+          San Marzanotomater, Pecorino, Fior di Latte, Seitan, Vitlök &
+          Chilisylt, Basilika, Evo
         </p>
         <h2>Jammin Vegan</h2>
         <p>
-            San Marzanotomater, Greenvie-Mozzarella, Parveggio, Seitan, Vitlök & Chilisylt, Basilika, Evo
+          San Marzanotomater, Greenvie-Mozzarella, Parveggio, Seitan, Vitlök &
+          Chilisylt, Basilika, Evo
         </p>
         <h2>Al Funghi</h2>
         <p>
-            Créme Fraiche, Pecorino, Fior di Latte, Champinjoner, Persilja, Vitlöksolja
+          Créme Fraiche, Pecorino, Fior di Latte, Champinjoner, Persilja,
+          Vitlöksolja
         </p>
         <h2>Al Funghi Vegan</h2>
         <p>
-            Oatly Ifraiche, Greenvie-Mozzarella, Parveggio, Champinjoner, Persilja, Vitlöksolja 
+          Oatly Ifraiche, Greenvie-Mozzarella, Parveggio, Champinjoner,
+          Persilja, Vitlöksolja
         </p>
 
-        <span>Alla pizzor 85 kr</span>
+        <span>Alla pizzor 95 kr</span>
       </MenuMenu>
     </MenuWrapper>
   );
