@@ -68,6 +68,9 @@ const SectionContent = styled.div`
     @media (min-width: 730px) {
       padding: 0 50px;
     }
+    @media (max-width: 600px ) {
+      font-size: 13px;
+    }
   }
 `;
 

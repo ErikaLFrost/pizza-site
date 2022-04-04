@@ -64,6 +64,10 @@ const VisitUsContent = styled.div`
       color: white;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4),
         0 0 30px rgba(0, 0, 0, 0.7);
+
+      @media (max-width: 600px ) {
+        font-size: 18px;
+      }
     }
   }
 `;
