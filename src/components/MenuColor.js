@@ -126,42 +126,42 @@ const MenuColor = () => {
     <MenuWrapper id="menuSection">
       <MenuMenu>
         <h1>Menu</h1>
-        <span>Alla pizzor 85 kr</span>
+        <span>Alla pizzor 95 kr</span>
         <span>Välj mellan vegetariskt eller veganskt</span>
         <div>Le Rosse:</div>
-        <h2 style={{color: "red"}}>&#9658; Marinara &#9668;</h2>
+        <h2 style={{color: "red"}}>{/* &#9658; */} Marinara {/* &#9668; */}</h2>
         <p>
-            San Marzanotomater, Vitlök, Oregano, Evo
+          San Marzanotomater, Vitlök, Oregano, Olivolja
         </p>
-        <h2 style={{color: "pink"}}>&#9658; Margherita &#9668;</h2>
+        <h2 style={{color: "pink"}}>{/* &#9658; */} Margherita  {/* &#9668; */}</h2>
         <p>
-            San Marzanotomater, Fior di Latte, Pecorino, Basilika, Evo
-        </p>
-
-        <h2 style={{color: "orange"}}>&#9658; Nduja &#9668;</h2>
-        <p>
-          San Marzanotomater, Fior di Latte, Veg Nduja, Grönkål, Pecorino, Evo
+          San Marzanotomater, Fior di Latte, Pecorino, Basilika, Olivolja
         </p>
 
-        <h2 style={{color: "lightgreen"}}>&#9658; Jammin &#9668;</h2>
+        <h2 style={{color: "orange"}}>{/* &#9658; */} Nduja {/* &#9668; */}</h2>
         <p>
-            San Marzanotomater, Pecorino, Fior di Latte, Seitan, Vitlök & Chilisylt, Basilika, Evo
+          San Marzanotomater, Fior di Latte, Pecorino, Veg Nduja, Basilika, Olivolja
+        </p>
+
+        <h2 style={{color: "lightgreen"}}>{/* &#9658; */} Jammin {/* &#9668; */}</h2>
+        <p>
+          San Marzanotomater, Fior di Latte, Pecorino, Seitan, Vitlök & Chilisylt, Basilika, Olivolja
         </p>
         <div>Le Bianche:</div>
-        <h2 style={{color: "red"}}>&#9658; Patata &#9668;</h2>
+        <h2 style={{color: "red"}}>{/* &#9658; */} Patata {/* &#9668; */}</h2>
         <p>
-          Créme Fraiche, Rosmarin, Pecorino, Potatis, Tomatpesto
+          Créme Fraiche, Pecorino, Fior di Latte, Rosmarin, Potatis, Tomatpesto, Olivolja
         </p>
 
-        <h2 style={{color: "pink"}}>&#9658; Al Funghi &#9668;</h2>
+        <h2 style={{color: "pink"}}>{/* &#9658; */} Al Funghi {/* &#9668; */}</h2>
         <p>
-            Créme Fraiche, Pecorino, Fior di Latte, Champinjoner, Persilja, Vitlöksolja
+          Créme Fraiche, Pecorino, Fior di Latte, Champinjoner, Persilja, Vitlöksolja
         </p>
 
-        <h2 style={{color: "aqua"}}>&#9658; Blue &#9668;</h2>
+        <h2 style={{color: "aqua"}}>{/* &#9658; */} Blue {/* &#9668; */}</h2>
         <p>
-          Fior di Latte, Pecorino, Gorgonzola, Päron, Valnötter,
-          Honung, Evo
+          Créme Fraiche, Pecorino, Fior di Latte, Gorgonzola, Päron, Valnötter,
+          Honung, Olivolja
         </p>
 
       </MenuMenu>

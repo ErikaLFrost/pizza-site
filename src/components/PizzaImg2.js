@@ -1,12 +1,12 @@
-import pizzaImg from "../images/pizza-image.jpg";
+import pizzaImg from "../images/skylt.jpg";
 import SectionComponent from "./SectionComponent";
 
-const PizzaImg = () => {
+const PizzaImg2 = () => {
   return (
     <SectionComponent
       bgImage={pizzaImg}
       span={"5"}
-      marginTop={"-390px"}
+      marginTop={"-500px"}
       paddingTop={"86.5%"}
       hideOnMobile={false}
       noFilter={true}
@@ -20,4 +20,4 @@ const PizzaImg = () => {
   );
 };
 
-export default PizzaImg;
+export default PizzaImg2;

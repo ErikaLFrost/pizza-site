@@ -1,18 +1,19 @@
 import styled from "styled-components";
 import GlobalFonts from "./fonts/fonts";
 import Hero from "./components/Hero";
-/* import Menu from "./components/Menu";
-import MenuColor from "./components/MenuColor"; */
-import MenuNew from "./components/MenuNew";
+/* import Menu from "./components/Menu"; */
+import MenuColor from "./components/MenuColor";
+/* import MenuNew from "./components/MenuNew"; */
 import VisitUs from "./components/VisitUs";
 import Catering from "./components/Catering";
 import Merch from "./components/Merch";
-import AboutUs from "./components/AboutUs";
+/* import AboutUs from "./components/AboutUs"; */
 import Insta from "./components/Insta";
 import Sticky from "./components/Sticky";
 import CrewImg from "./components/CrewImg";
 import Navigation from "./components/Navigation";
 import PizzaImg from "./components/PizzaImg";
+import PizzaImg2 from "./components/PizzaImg2";
 import PizzaPizza from "./components/Pizzatext";
 import Synthwave from "./components/Synthwave";
 import PreviewImage from "./components/PreviewImage";
@@ -44,14 +45,14 @@ function App() {
       <Hero />
       <PreviewImage />
       <GridWrapper>
-        <MenuNew />
+        <MenuColor />
         <VisitUs />
         <PizzaPizza />
         <Catering />
         <Merch />
         <CrewImg />
         <PizzaImg />
-        <AboutUs />
+        <PizzaImg2 />
       </GridWrapper>
       <Synthwave />
       <Insta />
