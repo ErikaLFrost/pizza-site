@@ -146,7 +146,7 @@ const Navigation = () => {
                     Öppettider
                   </StyledLink>
                 </li>
-                <li>
+                {/* <li>
                   <StyledLink
                     activeClass="active"
                     spy={true}
@@ -155,9 +155,9 @@ const Navigation = () => {
                     duration={windowWidth > 1000 ? 200 : 0}
                     smooth={true}
                   >
-                    Catering
+                    Om oss
                   </StyledLink>
-                </li>
+                </li> */}
                 <li>
                   <StyledLink
                     activeClass="active"
@@ -175,7 +175,7 @@ const Navigation = () => {
                     activeClass="active"
                     spy={true}
                     onClick={() => setOpen(open ? false : true)}
-                    to="aboutUsSection"
+                    to="cateringSection"
                     duration={windowWidth > 1000 ? 200 : 0}
                     smooth={true}
                   >
