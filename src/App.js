@@ -17,7 +17,7 @@ import PizzaImg2 from "./components/PizzaImg2";
 import PizzaPizza from "./components/Pizzatext";
 import Synthwave from "./components/Synthwave";
 import PreviewImage from "./components/PreviewImage";
-/* import ClosedMenu from "./components/Closed"; */
+import ClosedMenu from "./components/Closed";
 
 const MainWrapper = styled.div`
   position: relative;
@@ -39,7 +39,7 @@ function App() {
   return (
     <MainWrapper>
       <Navigation />
-      {/* <ClosedMenu /> */}
+      <ClosedMenu />
       <Sticky />
       <GlobalFonts />
       <Hero />
