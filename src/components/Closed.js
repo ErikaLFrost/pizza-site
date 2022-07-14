@@ -28,7 +28,7 @@ const Closed = () => {
   return (
     <ClosedMenu>
       <p>
-        Öppet igen! Välkomna till Blekingegatan 36
+        Sommarstängt! Välkomna tillbaka den 10:e augusti
       </p>
     </ClosedMenu>
   );
