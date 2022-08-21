@@ -69,6 +69,10 @@ const VisitUsContent = styled.div`
         font-size: 18px;
       }
     }
+    a {
+      color: #f29699;
+      text-decoration: none;
+    }
   }
 `;
 
@@ -103,6 +107,7 @@ const VisitUs = () => {
           <p>{`Lör 12-19 \n `}</p> */}
           <p>{`Onsdag - Söndag 12-20`}</p>
           <p>{`( Eller tills degen tar slut )`}</p>
+          <p>Öppettiderna kan variera - Håll koll på våra sociala medier <a href="https://www.instagram.com/lapiccolanonnapizza/?hl=en">Instagram</a> och <a href="https://www.facebook.com/lapiccolanonnapizza/">Facebook</a></p>
         </span>
         
       </VisitUsContent>
