@@ -3,7 +3,7 @@ import "../fonts/fonts";
 
 const ClosedMenu = styled.div`
   width: 100%;
-  height: 80px;
+  height: auto;
   position: -webkit-sticky;
   position: fixed;
   bottom: 40px;
@@ -18,6 +18,10 @@ const ClosedMenu = styled.div`
     padding: 6px 0;
     font-size: 24px;
   }
+  a {
+    color: #f29699;
+    text-decoration: none;
+  }
   @media (min-width: 1000px) {
     height: 40px;
     top: 0;
@@ -28,7 +32,7 @@ const Closed = () => {
   return (
     <ClosedMenu>
       <p>
-        Sommarstängt! Välkomna tillbaka den 10:e augusti
+      Opening hours may vary - Keep an eye on our social media <a href="https://www.instagram.com/lapiccolanonnapizza/?hl=en">Instagram</a> and <a href="https://www.facebook.com/lapiccolanonnapizza/">Facebook</a>
       </p>
     </ClosedMenu>
   );
