@@ -146,30 +146,6 @@ const Navigation = () => {
                     Öppettider
                   </StyledLink>
                 </li>
-                {/* <li>
-                  <StyledLink
-                    activeClass="active"
-                    spy={true}
-                    onClick={() => setOpen(open ? false : true)}
-                    to="cateringSection"
-                    duration={windowWidth > 1000 ? 200 : 0}
-                    smooth={true}
-                  >
-                    Om oss
-                  </StyledLink>
-                </li> */}
-                <li>
-                  <StyledLink
-                    activeClass="active"
-                    spy={true}
-                    onClick={() => setOpen(open ? false : true)}
-                    to="merchSection"
-                    duration={windowWidth > 1000 ? 200 : 0}
-                    smooth={true}
-                  >
-                    Merchandise
-                  </StyledLink>
-                </li>
                 <li>
                   <StyledLink
                     activeClass="active"

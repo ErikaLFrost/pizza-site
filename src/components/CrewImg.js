@@ -37,7 +37,7 @@ const SectionContent = styled.div`
   filter: contrast(110%) brightness(120%);
 `;
 
-const AboutUs = () => {
+const CrewImg = () => {
   return (
     <>
       <SectionWrapper>
@@ -53,4 +53,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default CrewImg;
