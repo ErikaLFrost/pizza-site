@@ -19,6 +19,9 @@ const InstaWrapper = styled.div`
     width: 100%;
     height: 100%;
   }
+  @media (max-width: 411px ) {
+    padding-bottom: 52px;
+  }
 `;
 
 const FollowUs = styled.h3`
