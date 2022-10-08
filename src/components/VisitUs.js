@@ -41,20 +41,14 @@ const VisitUsContent = styled.div`
   h2 {
     margin: 0;
     font-size: 60px;
-    padding-top: 20px;
     color: #f9e3e4;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4),
       0 0 30px rgba(0, 0, 0, 0.7);
-
-    @media (min-width: 1100px) {
-      position: absolute;
-      top: 50px;
-      padding-top: 0;
-    }
   }
 
   span {
     text-align: center;
+    padding: 0 20px;
 
     p {
       font-weight: 600;
@@ -101,13 +95,10 @@ const VisitUs = () => {
         <span>
           <p>{`
           Öppet: \n `}</p>
-          {/* <p>{`Ons 12-19 \n `}</p>
-          <p>{`Tor 12-19 \n `}</p>
-          <p>{`Fre 12-19 \n `}</p>
-          <p>{`Lör 12-19 \n `}</p> */}
           <p>{`Onsdag - Söndag 12-20`}</p>
           <p>{`( Eller tills degen tar slut )`}</p>
           <p>Öppettiderna kan variera - Håll koll på våra sociala medier <a href="https://www.instagram.com/lapiccolanonnapizza/?hl=en">Instagram</a> och <a href="https://www.facebook.com/lapiccolanonnapizza/">Facebook</a></p>
+          <p>För bokningar och övriga förfrågningar mejla oss på <a href = "mailto: lapiccolanonna@gmail.com">lapiccolanonna@gmail.com</a></p>
         </span>
         
       </VisitUsContent>

@@ -30,7 +30,7 @@ const Sticky = () => {
   return (
     <StickyMenu>
       <p>
-        Take Away - <a href="tel:+4673-234-74-55">073 234 74 55</a>
+        Take Away - <a href="tel:+4673-234-74-55">073 234 74 55</a> (ej via sms)
       </p>
     </StickyMenu>
   );
