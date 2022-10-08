@@ -60,7 +60,7 @@ const VisitUsContent = styled.div`
         0 0 30px rgba(0, 0, 0, 0.7);
 
       @media (max-width: 600px ) {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
     a {
