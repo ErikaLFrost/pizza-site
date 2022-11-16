@@ -40,7 +40,7 @@ const VisitUsContent = styled.div`
 
   h2 {
     margin: 0;
-    font-size: 60px;
+    font-size: 3rem;
     color: #f9e3e4;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4),
       0 0 30px rgba(0, 0, 0, 0.7);
@@ -53,20 +53,26 @@ const VisitUsContent = styled.div`
     p {
       font-weight: 600;
       margin-top: 0;
-      margin-bottom: 0.5rem;
-      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+      font-size: 1.1rem;
       color: white;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4),
         0 0 30px rgba(0, 0, 0, 0.7);
+      
+      
 
       @media (max-width: 600px ) {
-        font-size: 16px;
+        font-size: 0.8rem;
       }
     }
     a {
       color: #f29699;
       text-decoration: none;
     }
+    
+  }
+  .mb-08 {
+    margin-bottom: 0.8rem;
   }
 `;
 
@@ -82,9 +88,8 @@ const VisitUs = () => {
     <VisitUsWrapper id="visitUsSection">
       <VisitUsContent>
         <h2>Besök oss</h2>
-        <span>
-          <p>{`
-                  Södermalm \n`}</p>
+        <span className="mb-08">
+          <p>{`Södermalm \n`}</p>
           <p>{`Blekingegatan 36`}</p>
         </span>
 
@@ -92,13 +97,16 @@ const VisitUs = () => {
           <p>Stängt Midsommar: 25-26:e juni</p>
         </Closed> */}
 
-        <span>
-          <p>{`
-          Öppet: \n `}</p>
+        <span className="mb-08">
+          <p>{`Öppet: \n `}</p>
           <p>{`Onsdag - Söndag 12-20`}</p>
           <p>{`( Eller tills degen tar slut )`}</p>
           <p>Öppettiderna kan variera - Håll koll på våra sociala medier <a href="https://www.instagram.com/lapiccolanonnapizza/?hl=en">Instagram</a> och <a href="https://www.facebook.com/lapiccolanonnapizza/">Facebook</a></p>
-          <p>För bokningar och övriga förfrågningar mejla oss på <a href = "mailto: lapiccolanonna@gmail.com">lapiccolanonna@gmail.com</a></p>
+        </span>
+        <span>
+          <h2>Kontakta oss</h2>
+          <p>Boka deg eller beställningar? Ring <a href="tel:+4673-234-74-55">073 234 74 55 </a></p>
+          <p>Boka lokalen eller övriga förfrågningar? Mejla oss på <a href = "mailto: lapiccolanonna@gmail.com">lapiccolanonna@gmail.com</a></p>
         </span>
         
       </VisitUsContent>
