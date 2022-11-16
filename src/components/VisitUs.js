@@ -105,8 +105,8 @@ const VisitUs = () => {
         </span>
         <span>
           <h2>Kontakta oss</h2>
-          <p>Boka deg eller beställningar? Ring <a href="tel:+4673-234-74-55">073 234 74 55 </a></p>
-          <p>Boka lokalen eller övriga förfrågningar? Mejla <a href = "mailto: lapiccolanonna@gmail.com">lapiccolanonna@gmail.com</a></p>
+          <p>Boka deg eller beställa? Ring <a href="tel:+4673-234-74-55">073 234 74 55 </a></p>
+          <p>Boka lokalen eller andra förfrågningar? Mejla <a href = "mailto: lapiccolanonna@gmail.com">lapiccolanonna@gmail.com</a></p>
         </span>
         
       </VisitUsContent>
