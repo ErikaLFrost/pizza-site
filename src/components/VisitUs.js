@@ -55,7 +55,7 @@ const VisitUsContent = styled.div`
       margin-top: 0;
       margin-bottom: 0.3rem;
       font-size: 1.1rem;
-      color: white;
+      color: #f9e3e4;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4),
         0 0 30px rgba(0, 0, 0, 0.7);
       

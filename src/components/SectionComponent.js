@@ -54,7 +54,7 @@ const SectionContent = styled.div`
   }
 
   p {
-    color: white;
+    color: #f9e3e4;
     text-align: center;
     line-height: 1.6;
     margin-top: 0;
