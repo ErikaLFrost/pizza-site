@@ -144,6 +144,10 @@ const MenuColor = () => {
         <p>
           San Marzanotomater, Fior di Latte, Pecorino, Seitan, Vitlök & Chilisylt, Basilika, Olivolja
         </p>
+        <h2 style={{color: "green"}}>{/* &#9658; */} Napolitanish {/* &#9668; */}</h2>
+        <p>
+          San Marzanotomater, Fior di Latte, Pecorino,  Oregano, Oliver, Kapris, Kronärtskocka
+        </p>
         <div>Le Bianche:</div>
         <h2 style={{color: "red"}}>{/* &#9658; */} Patata {/* &#9668; */}</h2>
         <p>
