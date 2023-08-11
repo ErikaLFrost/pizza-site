@@ -35,7 +35,7 @@ function App() {
     <MainWrapper>
       <Navigation />
       {/* <ClosedMenu /> */}
-      <Sticky />
+      {/* <Sticky /> */}
       <GlobalFonts />
       <Hero />
       <PreviewImage />
