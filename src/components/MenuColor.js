@@ -125,7 +125,7 @@ const MenuColor = () => {
     <MenuWrapper id="menuSection">
       <MenuMenu>
         <h1>Menu</h1>
-        <span>Alla pizzor 110 kr</span>
+        <span>Alla pizzor 125 kr</span>
         <span>Välj mellan vegetariskt eller veganskt</span>
         <div>Le Rosse:</div>
         <h2 style={{color: "red"}}>{/* &#9658; */} Marinara {/* &#9668; */}</h2>
