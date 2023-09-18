@@ -26,7 +26,7 @@ const Horizon = styled.div`
 `;
 
 const Lines = styled.div`
-  height: 210px;
+  height: 176px; /* 210 */
   left: 0;
   position: absolute;
   top: 0;

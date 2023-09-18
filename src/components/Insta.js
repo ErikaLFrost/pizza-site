@@ -7,7 +7,7 @@ const InstaWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #f9e3e4;
-  padding-bottom: 32px;
+  padding-bottom: 0px;
   margin: 0 auto;
 
   a {
@@ -18,9 +18,6 @@ const InstaWrapper = styled.div`
   img {
     width: 100%;
     height: 100%;
-  }
-  @media (max-width: 411px ) {
-    padding-bottom: 52px;
   }
 `;
 

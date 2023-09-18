@@ -74,6 +74,12 @@ const MenuMenu = styled.div`
     }
   }
 
+  .obs {
+    padding-top: 30px;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
   p {
     text-align: center;
     margin: 0;
@@ -89,7 +95,7 @@ const MenuMenu = styled.div`
     }
   }
 
-  /* Alla Pizzor 95 kr */
+  /* Alla Pizzor 125 kr */
   span {
     display: block;
     text-align: center;
@@ -164,6 +170,11 @@ const MenuColor = () => {
           Créme Fraiche, Pecorino, Fior di Latte, Gorgonzola, Päron, Valnötter,
           Honung, Olivolja
         </p>
+        <span className="obs">
+          OBS:<br></br>
+          Vi har ingen glutenfri pizzabotten<br></br>
+          Vi erbjuder ingen hemleverans
+        </span>
       </MenuMenu>
     </MenuWrapper>
   );

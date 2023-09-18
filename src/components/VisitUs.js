@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import VisitUsImg from "../images/visit-us.jpg";
+import VisitUsImg from "../images/pizzanonna2.jpeg";
 
 const VisitUsWrapper = styled.div`
   background: linear-gradient(
@@ -11,7 +11,7 @@ const VisitUsWrapper = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${VisitUsImg});
 
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   grid-column: span 12;
   margin-top: 50px;
@@ -24,6 +24,7 @@ const VisitUsWrapper = styled.div`
     grid-column: span 5/13;
     margin-top: 0;
     border-radius: 5px;
+    box-shadow: 0px 0px 20px black;
   }
 `;
 
@@ -44,6 +45,9 @@ const VisitUsContent = styled.div`
     color: #f9e3e4;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4),
       0 0 30px rgba(0, 0, 0, 0.7);
+      @media (max-width: 500px) {
+        font-size: 24px;
+      }
   }
 
   span {

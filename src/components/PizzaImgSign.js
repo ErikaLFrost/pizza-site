@@ -6,7 +6,8 @@ const PizzaImgSign = () => {
     <SectionComponent
       bgImage={pizzaImg}
       span={"5"}
-      marginTop={"-250px;"}
+      marginTop={"-400px;"}
+      boxShadow={"0px 0px 20px black;"}
       paddingTop={"86.5%"}
       hideOnMobile={false}
       noFilter={true}
