@@ -10,7 +10,7 @@ const PizzaText = styled.div`
     margin: 0;
     font-size: 90px;
     right: 150px;
-    top: 582px;;
+    top: 600px;
 
     h3 {
         filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.76));

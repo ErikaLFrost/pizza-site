@@ -16,6 +16,7 @@ const SectionWrapper = styled.div`
   @media (min-width: 1000px) {
     grid-column: span ${(props) => (props.span === "5" ? "5/13" : "6")};
     margin-top: ${(props) => (props.marginTop ? props.marginTop : "70px")};
+    box-shadow: ${(props) => (props.boxShadow ? props.boxShadow : "0px 0px 20px black")};
   }
 `;
 
@@ -36,7 +37,7 @@ const SectionContent = styled.div`
   justify-content: center;
   flex-direction: column;
   white-space: pre-line;
-  border-radius: 5px;
+  border-radius: 1px;
 
   h2 {
     margin: 0;
@@ -50,6 +51,7 @@ const SectionContent = styled.div`
       position: absolute;
       top: 50px;
       padding-top: 0;
+      box-shadow: 0px 0px 20px black;
     }
   }
 
@@ -83,6 +85,7 @@ const SectionComponent = ({
   marginTop,
   paddingTop,
   shading,
+  boxShadow,
   hideOnMobile,
   id,
   altText,
@@ -95,6 +98,7 @@ const SectionComponent = ({
         span={span}
         marginTop={marginTop}
         paddingTop={paddingTop}
+        boxShadow={boxShadow}
         hideOnMobile={hideOnMobile}
         id={id}
       >
