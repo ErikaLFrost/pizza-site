@@ -41,7 +41,7 @@ const VisitUsContent = styled.div`
 
   h2 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 36px;
     color: #f9e3e4;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.4),
       0 0 30px rgba(0, 0, 0, 0.7);
@@ -93,8 +93,7 @@ const VisitUs = () => {
       <VisitUsContent>
         <h2>Besök oss</h2>
         <span className="mb-08">
-          <p>{`Södermalm \n`}</p>
-          <p>{`Blekingegatan 36`}</p>
+          <p>{`Södermalm - Blekingegatan 36`}</p>
         </span>
 
         {/* <Closed>
