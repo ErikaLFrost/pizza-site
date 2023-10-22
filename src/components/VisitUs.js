@@ -109,11 +109,8 @@ const VisitUs = () => {
         </span>
         <span>
           <h2>Kontakta oss</h2>
-          <p>Boka deg genom att komma förbi under våra öppettider, man kan även ringa <a href="tel:+4673-234-74-55">073 234 74 55</a></p>
-          <p>Dock hinner vi inte alltid svara då vi endast är två personer som jobbar och måste prioritera gästerna på plats.</p>
+          <p>Boka deg genom att komma förbi under våra öppettider</p>
           <p>Vid övriga frågor maila gärna <a href = "mailto: lapiccolanonna@gmail.com">lapiccolanonna@gmail.com</a></p>
-          {/* <p>Boka deg eller beställa? Ring <a href="tel:+4673-234-74-55">073 234 74 55 </a></p>
-          <p>Boka lokalen eller andra förfrågningar? Mejla <a href = "mailto: lapiccolanonna@gmail.com">lapiccolanonna@gmail.com</a></p> */}
         </span>
         
       </VisitUsContent>
