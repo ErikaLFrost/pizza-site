@@ -78,20 +78,25 @@ const MenuMenu = styled.div`
     padding-top: 30px;
     text-decoration: none;
     font-weight: 400;
+    font-size: 16px;
+
+    @media (min-width: 530px) {
+      font-size: 18px;
+    }
   }
 
   p {
     text-align: center;
     margin: 0;
     padding: 0 10px;
-    font-size: 12px;
+    font-size: 14px;
 
     @media (min-width: 530px) {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     @media (min-width: 1000px) {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 
@@ -136,23 +141,23 @@ const MenuColor = () => {
         <div>Le Rosse:</div>
         <h2 style={{color: "red"}}>{/* &#9658; */} Marinara {/* &#9668; */}</h2>
         <p>
-          San Marzanotomater, Vitlök, Oregano, Olivolja
+          Tomat, Vitlök, Oregano, Olivolja
         </p>
         <h2 style={{color: "pink"}}>{/* &#9658; */} Margherita  {/* &#9668; */}</h2>
         <p>
-          San Marzanotomater, Fior di Latte, Pecorino, Basilika, Olivolja
+          Tomat, Fior di Latte, Pecorino, Basilika, Olivolja
         </p>
         <h2 style={{color: "orange"}}>{/* &#9658; */} Nduja {/* &#9668; */}</h2>
         <p>
-          San Marzanotomater, Fior di Latte, Pecorino, Veg Nduja, Basilika, Olivolja
+          Tomat, Fior di Latte, Pecorino, Veg Nduja, Basilika, Olivolja
         </p>
         <h2 style={{color: "lightgreen"}}>{/* &#9658; */} Jammin {/* &#9668; */}</h2>
         <p>
-          San Marzanotomater, Fior di Latte, Pecorino, Seitan, Vitlök & Chilisylt, Basilika, Olivolja
+          Tomat, Fior di Latte, Pecorino, Seitan, Vitlök & Chilisylt, Basilika, Olivolja
         </p>
         <h2 style={{color: "green"}}>{/* &#9658; */} Napolitanish {/* &#9668; */}</h2>
         <p>
-          San Marzanotomater, Fior di Latte, Pecorino,  Oregano, Oliver, Kapris, Kronärtskocka
+          Tomat, Fior di Latte, Pecorino,  Oregano, Oliver, Kapris, Kronärtskocka
         </p>
         <div>Le Bianche:</div>
         <h2 style={{color: "red"}}>{/* &#9658; */} Patata {/* &#9668; */}</h2>
