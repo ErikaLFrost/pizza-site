@@ -74,6 +74,7 @@ const MenuMenu = styled.div`
     }
   }
 
+  /* Bottom text */
   .obs {
     padding-top: 30px;
     text-decoration: none;
