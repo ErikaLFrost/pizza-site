@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 import styled from "styled-components";
 import { useTransition, animated } from "react-spring";
 import FlickerAnimation from "./Flicker";
@@ -87,7 +87,15 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
   const windowWidth = useWindowWidth();
 
-  const navigationTransition = useTransition(open, null, {
+  const handleNavClick = (target) => {
+    setOpen(false);
+    scroller.scrollTo(target, {
+      duration: windowWidth > 1000 ? 200 : 0,
+      smooth: true,
+    });
+  };
+
+  const navigationTransition = useTransition(open, {
     config: {
       tension: 100,
       duration: windowWidth > 1000 ? 200 : 150,
@@ -117,44 +125,23 @@ const Navigation = () => {
           <div></div>
         </HamburgerLinesContainer>
       </Hamburger>
-      {navigationTransition.map(
-        ({ item, props, key }) =>
+      {navigationTransition(
+        (style, item, key) =>
           item && (
-            <MenuOpen style={props} key={key}>
+            <MenuOpen style={style} key={key}>
               <ul>
                 <li>
-                  <StyledLink
-                    activeClass="active"
-                    spy={true}
-                    onClick={() => setOpen(open ? false : true)}
-                    to="menuSection"
-                    duration={windowWidth > 1000 ? 200 : 0}
-                    smooth={true}
-                  >
+                  <StyledLink onClick={() => handleNavClick("menuSection")}>
                     Meny
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink
-                    activeClass="active"
-                    spy={true}
-                    onClick={() => setOpen(open ? false : true)}
-                    to="visitUsSection"
-                    duration={windowWidth > 1000 ? 200 : 0}
-                    smooth={true}
-                  >
+                  <StyledLink onClick={() => handleNavClick("visitUsSection")}>
                     Öppettider
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink
-                    activeClass="active"
-                    spy={true}
-                    onClick={() => setOpen(open ? false : true)}
-                    to="cateringSection"
-                    duration={windowWidth > 1000 ? 200 : 0}
-                    smooth={true}
-                  >
+                  <StyledLink onClick={() => handleNavClick("cateringSection")}>
                     Om oss
                   </StyledLink>
                 </li>

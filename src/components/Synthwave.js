@@ -67,14 +67,12 @@ const Sun = styled.div`
 
 const Synthwave = () => {
   return (
-    <>
-      <SynthwaveContainer>
-        <Horizon>
-          <Sun />
-          <Lines />
-        </Horizon>
-      </SynthwaveContainer>
-    </>
+    <SynthwaveContainer>
+      <Horizon>
+        <Sun />
+        <Lines />
+      </Horizon>
+    </SynthwaveContainer>
   );
 };
 

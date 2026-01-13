@@ -6,7 +6,6 @@ Det började med att vi genom vurmandet för god vegansk och vegetarisk mat, sam
 Vi är så stolta över att kunna leverera en riktigt god vegansk och vegetarisk pizza i Stockholm till ett rimligt pris. Kom gärna förbi oss och smaka.\n
 Varma hälsningar från oss på Nonna!`;
 
-
 const altText = `Pizza Loco`;
 
 const AboutUs = () => {
@@ -16,7 +15,6 @@ const AboutUs = () => {
       spanText={aboutUsSpan}
       bgImage={cateringImg}
       span={"6"}
-      shading={true}
       id={"cateringSection"}
       altText={altText}
     />

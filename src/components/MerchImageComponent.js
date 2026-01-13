@@ -3,7 +3,7 @@ import styled from "styled-components";
 const MerchImage = styled.div`
   grid-column: span 12;
   grid-column-end: 13;
-  background: url(${(props) => props.bgImage && props.bgImage});
+  background: url(${(props) => props.$bgImage && props.$bgImage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ const MerchImage = styled.div`
 `;
 
 const MerchImageComponent = ({ merchImage }) => {
-  return <MerchImage bgImage={merchImage} />;
+  return <MerchImage $bgImage={merchImage} />;
 };
 
 export default MerchImageComponent;

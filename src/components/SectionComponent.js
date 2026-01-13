@@ -5,27 +5,28 @@ const SectionWrapper = styled.div`
   width: 100%;
   height: 0;
   padding-top: ${(props) =>
-    props.imgProportion ? props.imgProportion : "99.5%"};
+    props.$imgProportion ? props.$imgProportion : "99.5%"};
   position: relative;
   margin-top: 50px;
 
   @media (max-width: 1000px) {
-    display: ${(props) => props.hideOnMobile && "none"};
+    display: ${(props) => props.$hideOnMobile && "none"};
   }
 
   @media (min-width: 1000px) {
-    grid-column: span ${(props) => (props.span === "5" ? "5/13" : "6")};
-    margin-top: ${(props) => (props.marginTop ? props.marginTop : "70px")};
-    box-shadow: ${(props) => (props.boxShadow ? props.boxShadow : "0px 0px 20px black")};
+    grid-column: span ${(props) => (props.$span === "5" ? "5/13" : "6")};
+    margin-top: ${(props) => (props.$marginTop ? props.$marginTop : "70px")};
+    box-shadow: ${(props) =>
+      props.$boxShadow ? props.$boxShadow : "0px 0px 20px black"};
   }
 `;
 
 const SectionContent = styled.div`
   background-image: ${(props) =>
-      props.noFilter === true
+      props.$noFilter === true
         ? "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))"
         : "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))"},
-    url(${(props) => props.bgImage && props.bgImage});
+    url(${(props) => props.$bgImage && props.$bgImage});
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -70,7 +71,7 @@ const SectionContent = styled.div`
     @media (min-width: 730px) {
       padding: 0 50px;
     }
-    @media (max-width: 600px ) {
+    @media (max-width: 600px) {
       font-size: 13px;
     }
   }
@@ -84,7 +85,6 @@ const SectionComponent = ({
   span,
   marginTop,
   paddingTop,
-  shading,
   boxShadow,
   hideOnMobile,
   id,
@@ -94,15 +94,15 @@ const SectionComponent = ({
   return (
     <>
       <SectionWrapper
-        imgProportion={imgProportion}
-        span={span}
-        marginTop={marginTop}
-        paddingTop={paddingTop}
-        boxShadow={boxShadow}
-        hideOnMobile={hideOnMobile}
+        $imgProportion={imgProportion}
+        $span={span}
+        $marginTop={marginTop}
+        $paddingTop={paddingTop}
+        $boxShadow={boxShadow}
+        $hideOnMobile={hideOnMobile}
         id={id}
       >
-        <SectionContent bgImage={bgImage} shading={shading} noFilter={noFilter}>
+        <SectionContent $bgImage={bgImage} $noFilter={noFilter}>
           {/* Detta är istället för alt-tagg för bakgrundsbilden */}
           <span
             className="background-image"

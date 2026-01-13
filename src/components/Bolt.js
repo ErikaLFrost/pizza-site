@@ -12,8 +12,8 @@ const Bolt = styled.div`
     width: 100px;
     height: auto;
     bottom: -25vh;
-    left: ${(props) => (props.left ? "0px" : "")};
-    right: ${(props) => (props.right ? "0px" : "")};
+    left: ${(props) => (props.$left ? "0px" : "")};
+    right: ${(props) => (props.$right ? "0px" : "")};
   }
 
   /* Bolt for desktop */
@@ -23,14 +23,14 @@ const Bolt = styled.div`
     width: 100px;
     height: auto;
     bottom: -25vh;
-    left: ${(props) => (props.left ? props.left : "")};
-    right: ${(props) => (props.right ? props.right : "")};
+    left: ${(props) => (props.$left ? props.$left : "")};
+    right: ${(props) => (props.$right ? props.$right : "")};
   }
 
   svg {
-    transform: ${(props) => (props.scale ? props.scale : "scale(0,0)")};
+    transform: ${(props) => (props.$scale ? props.$scale : "scale(0,0)")};
     animation: ${FlickerAnimation}
-      ${(props) => (props.seconds ? props.seconds : "4s")} linear infinite;
+      ${(props) => (props.$seconds ? props.$seconds : "4s")} linear infinite;
     filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.76));
 
     g {
@@ -41,7 +41,7 @@ const Bolt = styled.div`
 
 const BoltImg = ({ left, right, scale, seconds }) => {
   return (
-    <Bolt left={left} right={right} scale={scale} seconds={seconds}>
+    <Bolt $left={left} $right={right} $scale={scale} $seconds={seconds}>
       <svg viewBox="0 0 512 512">
         <g>
           <g>

@@ -10,7 +10,7 @@ const SectionWrapper = styled.div`
   position: relative;
   grid-column: span 12;
   margin-top: 50px;
-  display: ${(props) => props.hideOnMobile && "none"};
+  display: ${(props) => props.$hideOnMobile && "none"};
   border-radius: 0;
 
   @media (min-width: 1000px) {
