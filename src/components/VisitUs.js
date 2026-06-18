@@ -102,8 +102,8 @@ const VisitUs = () => {
 
 <span className="mb-08">
           {/* <p>{`Sommaröppet fr.o.m 1/6 t.o.m 8/9: \n `}</p> */}
-          <p>{`Onsdag - Fredag 12-20`}</p>
-          <p>{`Lördag - Söndag 13-20`}</p>
+          {/* <p>{`Onsdag - Fredag 12-20`}</p> */}
+          <p>{`Onsdag - Söndag 15:00-20:30`}</p>
           <p>{`( Eller tills degen tar slut )`}</p>
           <p>Öppettiderna kan variera och endast drop in på borden</p>
           <p>Håll koll på våra sociala medier <a href="https://www.instagram.com/lapiccolanonnapizza/?hl=en">Instagram</a> och <a href="https://www.facebook.com/lapiccolanonnapizza/">Facebook</a></p>
